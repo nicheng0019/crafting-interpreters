@@ -1,5 +1,5 @@
 import sys
-from Scanner import *
+import Scanner
 
 
 class Lox(object):
@@ -23,7 +23,7 @@ class Lox(object):
         with open(path) as file:
             bytes = file.read()
 
-        print(type(bytes))
+        #print(type(bytes))
         cls.run(bytes)
 
         if cls.hadError:
@@ -44,11 +44,11 @@ class Lox(object):
 
     @classmethod
     def run(cls, source):
-        scanner = Scanner(source)
+        scanner = Scanner.Scanner(source)
         tokens = scanner.scanTokens()
 
         for token in tokens:
-            print(token)
+            print("run token: ", token, "##token end")
 
     @classmethod
     def error(cls, line, message):

@@ -6,6 +6,9 @@ class Token(object):
         self.line = line
 
     def __repr__(self):
-        return str(self.type) + " " + self.lexeme + " " + self.literal
+        if not self.literal:
+            return str(self.type) + " " + self.lexeme + " " + str(self.literal)
+        else:
+            return str(self.type) + " " + self.lexeme + " "
 
 
