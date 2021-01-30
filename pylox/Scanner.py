@@ -21,6 +21,23 @@ class Scanner(object):
                                      "<": (TokenType.LESS_EQUAL, TokenType.LESS),
                                      ">": (TokenType.GREATER_EQUAL, TokenType.GREATER)}
 
+        self.keywords_dict = {"and": TokenType.AND,
+                                "class": TokenType.CLASS,
+                                "else": TokenType.ELSE,
+                                "false": TokenType.FALSE,
+                                "for": TokenType.FOR,
+                                "fun": TokenType.FUN,
+                                "if": TokenType.IF,
+                                "nil": TokenType.NIL,
+                                "or": TokenType.OR,
+                                "print": TokenType.PRINT,
+                                "return": TokenType.RETURN,
+                                "super": TokenType.SUPER,
+                                "this": TokenType.THIS,
+                                "true": TokenType.TRUE,
+                                "var": TokenType.VAR,
+                                "while": TokenType.WHILE}
+
     def scanTokens(self):
         while not self.isAtEnd():
             self.start = self.current
@@ -53,13 +70,15 @@ class Scanner(object):
         elif c is '"':
             self.string()
 
-        elif c is 'o':
-            if self.peek() == 'r':
-                self.addToken(TokenType.OR)
+        # elif c is 'o':
+        #     if self.peek() == 'r':
+        #         self.addToken(TokenType.OR)
 
         else:
             if self.isDigit(c):
                 self.number()
+            elif self.isAlpha(c):
+                self.identifier()
             else:
                 Pylox.Lox.error(self.line, "Unexpected character.")
             return
@@ -128,5 +147,20 @@ class Scanner(object):
 
         return self.source[self.current + 1]
 
+    def isAlpha(self, c):
+        return ('a' <= c <= 'z') or ('A' <= c <= 'Z') or c == '_'
 
+    def isAlphaNumeric(self, c):
+        return self.isAlpha(c) or self.isDigit(c)
+
+    def identifier(self):
+        while self.isAlphaNumeric(self.peek()):
+            self.advance()
+
+        text = self.source[self.start:self.current]
+        type = self.keywords_dict.get(text, None)
+        if type is None:
+            type = TokenType.IDENTIFIER
+
+        self.addToken(type)
 
