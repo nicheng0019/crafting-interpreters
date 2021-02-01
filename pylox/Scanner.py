@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from TokenType import TokenType
 from Token import Token
 import Pylox

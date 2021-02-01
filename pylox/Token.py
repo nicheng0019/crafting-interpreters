@@ -1,3 +1,5 @@
+# coding=utf-8
+
 class Token(object):
     def __init__(self, type, lexeme, literal, line):
         self.type = type
