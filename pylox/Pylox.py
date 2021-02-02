@@ -2,6 +2,9 @@
 
 import sys
 import Scanner
+import TokenType
+import Parser
+import AstPrinter
 
 
 class Lox(object):
@@ -49,12 +52,23 @@ class Lox(object):
         scanner = Scanner.Scanner(source)
         tokens = scanner.scanTokens()
 
-        for token in tokens:
-            print("run token: ", token, "##token end")
+        parser = Parser.Parser(tokens)
+        expression = parser.parse()
+
+        if cls.hadError:
+            return
+
+        print(AstPrinter.AstPrinter().print(expression))
 
     @classmethod
-    def error(cls, line, message):
-        cls.report(line, "", message)
+    def error(cls, line=-1, message="", token=None):
+        if token is None:
+            cls.report(line, "", message)
+        else:
+            if token.type == TokenType.TokenType.EOF:
+                cls.report(token.line, " at end", message)
+            else:
+                cls.report(token.line, " at '" + token.lexeme + "'", message)
 
     @classmethod
     def report(cls, line, where, message):
