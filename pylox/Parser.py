@@ -143,5 +143,26 @@ class Parser(object):
             self.advance()
 
 
+if __name__ == "__main__":
+    import Token
+    import TokenType
+
+    expression = Expr.Binary(Expr.Unary(Token.Token(TokenType.TokenType.MINUS, '-', None, 1), Expr.Literal(123)),
+                             Token.Token(TokenType.TokenType.STAR, "*", None, 1),
+                             Expr.Grouping(Expr.Literal(45.67)))
+
+    #-123 * (45.67)
+    tokens = [Token.Token(TokenType.TokenType.MINUS, '-', None, 1),
+              Token.Token(TokenType.TokenType.NUMBER, "123", 123, 1),
+              Token.Token(TokenType.TokenType.STAR, "*", None, 1),
+              Token.Token(TokenType.TokenType.LEFT_PAREN, "(", None, 1),
+              Token.Token(TokenType.TokenType.NUMBER, "45.67", 45.67, 1),
+              Token.Token(TokenType.TokenType.RIGHT_PAREN, ")", None, 1),
+              Token.Token(TokenType.TokenType.EOF, "", "", 1)]
+
+    parser = Parser(tokens)
+    expr = parser.parse()
+    print(expr, expr.left, expr.left.operator, expr.left.right,
+          expr.operator, expr.right, expr.right.expression, expr.right.expression.value)
 
 

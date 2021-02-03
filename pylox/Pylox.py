@@ -1,16 +1,19 @@
-# coding=utf-8
+#coding=utf-8
 
 import sys
 import Scanner
 import TokenType
 import Parser
 import AstPrinter
+import Interpreter
 
 
 class Lox(object):
     hadError = False
+    hadRuntimeError = False
     exit_status = {64: "EX_USAGE ", 65: "EX_DATAERR",
                     66: "EX_NOINPUT", 70: "EX_SOFTWARE"}
+    interpreter = Interpreter.Interpreter()
 
     @classmethod
     def main(cls, argv):
@@ -33,6 +36,8 @@ class Lox(object):
 
         if cls.hadError:
             cls.exit(65)
+        if cls.hadRuntimeError:
+            cls.exit(70)
 
     @classmethod
     def runPrompt(cls):
@@ -58,7 +63,9 @@ class Lox(object):
         if cls.hadError:
             return
 
-        print(AstPrinter.AstPrinter().print(expression))
+        cls.interpreter.interpret(expression)
+
+        #print(AstPrinter.AstPrinter().print(expression))
 
     @classmethod
     def error(cls, line=-1, message="", token=None):
@@ -69,6 +76,11 @@ class Lox(object):
                 cls.report(token.line, " at end", message)
             else:
                 cls.report(token.line, " at '" + token.lexeme + "'", message)
+
+    @classmethod
+    def runtimeError(cls, error):
+        print(error.message + "\n[line " + error.token.line + "]")
+        cls.hadRuntimeError = True
 
     @classmethod
     def report(cls, line, where, message):
