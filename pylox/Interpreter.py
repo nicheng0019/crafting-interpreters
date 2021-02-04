@@ -111,4 +111,3 @@ class Interpreter(Expr.Visitor):
             return
 
         raise PyloxRuntimeError(operator, "Operand must be a number.")
-
