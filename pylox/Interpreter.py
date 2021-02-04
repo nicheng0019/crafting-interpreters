@@ -1,24 +1,29 @@
 # coding=utf-8
 
 import Expr
+import Stmt
 from TokenType import TokenType
 import Pylox
 from RuntimeError import PyloxRuntimeError
 
 
-class Interpreter(Expr.Visitor):
+class Interpreter(Expr.Visitor, Stmt.Visitor):
     def __init__(self):
         self.binaryOp = dict()
         self.registerBinaryOp()
         self.checkOps_set = {TokenType.GREATER, TokenType.GREATER_EQUAL, TokenType.LESS, TokenType.LESS_EQUAL,
                              TokenType.MINUS, TokenType.SLASH, TokenType.STAR}
 
-    def interpret(self, expression: Expr.Expr):
+    def interpret(self, statements):
         try:
-            value = self.evaluate(expression)
-            print(self.stringify(value))
+            for statement in statements:
+                self.execute(statement)
+
         except PyloxRuntimeError as error:
             Pylox.Lox.runtimeError(error)
+
+    def execute(self, stmt):
+        stmt.accept(self)
 
     def stringify(self, object):
         if object is None:
@@ -111,3 +116,11 @@ class Interpreter(Expr.Visitor):
             return
 
         raise PyloxRuntimeError(operator, "Operand must be a number.")
+
+    def visitExpressionStmt(self, stmt: Stmt.Expression):
+        self.evaluate(stmt.expression)
+
+    def visitPrintStmt(self, stmt: Stmt.Print):
+        value = self.evaluate(stmt.expression)
+        print(self.stringify(value))
+

@@ -58,12 +58,12 @@ class Lox(object):
         tokens = scanner.scanTokens()
 
         parser = Parser.Parser(tokens)
-        expression = parser.parse()
+        statements = parser.parse()
 
         if cls.hadError:
             return
 
-        cls.interpreter.interpret(expression)
+        cls.interpreter.interpret(statements)
 
         #print(AstPrinter.AstPrinter().print(expression))
 
