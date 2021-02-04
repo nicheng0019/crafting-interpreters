@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from typing import Optional, List
+from typing import List
 import Token
 
 
@@ -16,7 +16,7 @@ class Expr(object):
 
 
 class Assign(Expr):
-	def __init__(self, name: Optional[Token.Token], value: Optional[Expr]):
+	def __init__(self, name: Token.Token, value: Expr):
 		self.name = name
 		self.value = value
 
@@ -25,7 +25,7 @@ class Assign(Expr):
 
 
 class Binary(Expr):
-	def __init__(self, left: Optional[Expr], operator: Optional[Token.Token], right: Optional[Expr]):
+	def __init__(self, left: Expr, operator: Token.Token, right: Expr):
 		self.left = left
 		self.operator = operator
 		self.right = right
@@ -35,7 +35,7 @@ class Binary(Expr):
 
 
 class Call(Expr):
-	def __init__(self, callee: Optional[Expr], paren: Optional[Token.Token], arguments: Optional[List[Expr]]):
+	def __init__(self, callee: Expr, paren: Token.Token, arguments: List[Expr]):
 		self.callee = callee
 		self.paren = paren
 		self.arguments = arguments
@@ -45,7 +45,7 @@ class Call(Expr):
 
 
 class Get(Expr):
-	def __init__(self, object: Optional[Expr], name: Optional[Token.Token]):
+	def __init__(self, object: Expr, name: Token.Token):
 		self.object = object
 		self.name = name
 
@@ -54,7 +54,7 @@ class Get(Expr):
 
 
 class Grouping(Expr):
-	def __init__(self, expression: Optional[Expr]):
+	def __init__(self, expression: Expr):
 		self.expression = expression
 
 	def accept(self, visitor):
@@ -62,7 +62,7 @@ class Grouping(Expr):
 
 
 class Literal(Expr):
-	def __init__(self, value: Optional[object]):
+	def __init__(self, value: object):
 		self.value = value
 
 	def accept(self, visitor):
@@ -70,7 +70,7 @@ class Literal(Expr):
 
 
 class Logical(Expr):
-	def __init__(self, left: Optional[Expr], operator: Optional[Token.Token], right: Optional[Expr]):
+	def __init__(self, left: Expr, operator: Token.Token, right: Expr):
 		self.left = left
 		self.operator = operator
 		self.right = right
@@ -80,7 +80,7 @@ class Logical(Expr):
 
 
 class Set(Expr):
-	def __init__(self, object: Optional[Expr], name: Optional[Token.Token], value: Optional[Expr]):
+	def __init__(self, object: Expr, name: Token.Token, value: Expr):
 		self.object = object
 		self.name = name
 		self.value = value
@@ -90,7 +90,7 @@ class Set(Expr):
 
 
 class Super(Expr):
-	def __init__(self, keyword: Optional[Token.Token], method: Optional[Token.Token]):
+	def __init__(self, keyword: Token.Token, method: Token.Token):
 		self.keyword = keyword
 		self.method = method
 
@@ -99,7 +99,7 @@ class Super(Expr):
 
 
 class This(Expr):
-	def __init__(self, keyword: Optional[Token.Token]):
+	def __init__(self, keyword: Token.Token):
 		self.keyword = keyword
 
 	def accept(self, visitor):
@@ -107,7 +107,7 @@ class This(Expr):
 
 
 class Unary(Expr):
-	def __init__(self, operator: Optional[Token.Token], right: Optional[Expr]):
+	def __init__(self, operator: Token.Token, right: Expr):
 		self.operator = operator
 		self.right = right
 
@@ -116,7 +116,7 @@ class Unary(Expr):
 
 
 class Variable(Expr):
-	def __init__(self, name: Optional[Token.Token]):
+	def __init__(self, name: Token.Token):
 		self.name = name
 
 	def accept(self, visitor):
@@ -124,39 +124,39 @@ class Variable(Expr):
 
 
 class Visitor(object):
-	def visitAssignExpr(self, expr: Optional[Assign]):
+	def visitAssignExpr(self, expr: Assign):
 		raise NotImplementedError
 
-	def visitBinaryExpr(self, expr: Optional[Binary]):
+	def visitBinaryExpr(self, expr: Binary):
 		raise NotImplementedError
 
-	def visitCallExpr(self, expr: Optional[Call]):
+	def visitCallExpr(self, expr: Call):
 		raise NotImplementedError
 
-	def visitGetExpr(self, expr: Optional[Get]):
+	def visitGetExpr(self, expr: Get):
 		raise NotImplementedError
 
-	def visitGroupingExpr(self, expr: Optional[Grouping]):
+	def visitGroupingExpr(self, expr: Grouping):
 		raise NotImplementedError
 
-	def visitLiteralExpr(self, expr: Optional[Literal]):
+	def visitLiteralExpr(self, expr: Literal):
 		raise NotImplementedError
 
-	def visitLogicalExpr(self, expr: Optional[Logical]):
+	def visitLogicalExpr(self, expr: Logical):
 		raise NotImplementedError
 
-	def visitSetExpr(self, expr: Optional[Set]):
+	def visitSetExpr(self, expr: Set):
 		raise NotImplementedError
 
-	def visitSuperExpr(self, expr: Optional[Super]):
+	def visitSuperExpr(self, expr: Super):
 		raise NotImplementedError
 
-	def visitThisExpr(self, expr: Optional[This]):
+	def visitThisExpr(self, expr: This):
 		raise NotImplementedError
 
-	def visitUnaryExpr(self, expr: Optional[Unary]):
+	def visitUnaryExpr(self, expr: Unary):
 		raise NotImplementedError
 
-	def visitVariableExpr(self, expr: Optional[Variable]):
+	def visitVariableExpr(self, expr: Variable):
 		raise NotImplementedError
 

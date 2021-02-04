@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from typing import Optional, List
+from typing import List
 import Expr
 import Token
 
@@ -17,7 +17,7 @@ class Stmt(object):
 
 
 class Block(Stmt):
-	def __init__(self, statements: Optional[List[Stmt]]):
+	def __init__(self, statements: List[Stmt]):
 		self.statements = statements
 
 	def accept(self, visitor):
@@ -25,7 +25,7 @@ class Block(Stmt):
 
 
 class Expression(Stmt):
-	def __init__(self, expression: Optional[Expr.Expr]):
+	def __init__(self, expression: Expr.Expr):
 		self.expression = expression
 
 	def accept(self, visitor):
@@ -33,7 +33,7 @@ class Expression(Stmt):
 
 
 class Function(Stmt):
-	def __init__(self, name: Optional[Token.Token], params: Optional[List[Token.Token]], body: Optional[List[Stmt]]):
+	def __init__(self, name: Token.Token, params: List[Token.Token], body: List[Stmt]):
 		self.name = name
 		self.params = params
 		self.body = body
@@ -43,7 +43,7 @@ class Function(Stmt):
 
 
 class Class(Stmt):
-	def __init__(self, name: Optional[Token.Token], superclass: Optional[Expr.Variable], methods: Optional[List[Function]]):
+	def __init__(self, name: Token.Token, superclass: Expr.Variable, methods: List[Function]):
 		self.name = name
 		self.superclass = superclass
 		self.methods = methods
@@ -53,7 +53,7 @@ class Class(Stmt):
 
 
 class If(Stmt):
-	def __init__(self, condition: Optional[Expr.Expr], thenBranch: Optional[Stmt], elseBranch: Optional[Stmt]):
+	def __init__(self, condition: Expr.Expr, thenBranch: Stmt, elseBranch: Stmt):
 		self.condition = condition
 		self.thenBranch = thenBranch
 		self.elseBranch = elseBranch
@@ -63,7 +63,7 @@ class If(Stmt):
 
 
 class Print(Stmt):
-	def __init__(self, expression: Optional[Expr.Expr]):
+	def __init__(self, expression: Expr.Expr):
 		self.expression = expression
 
 	def accept(self, visitor):
@@ -71,7 +71,7 @@ class Print(Stmt):
 
 
 class Return(Stmt):
-	def __init__(self, keyword: Optional[Token.Token], value: Optional[Expr.Expr]):
+	def __init__(self, keyword: Token.Token, value: Expr.Expr):
 		self.keyword = keyword
 		self.value = value
 
@@ -80,7 +80,7 @@ class Return(Stmt):
 
 
 class Var(Stmt):
-	def __init__(self, name: Optional[Token.Token], initializer: Optional[Expr.Expr]):
+	def __init__(self, name: Token.Token, initializer: Expr.Expr):
 		self.name = name
 		self.initializer = initializer
 
@@ -89,7 +89,7 @@ class Var(Stmt):
 
 
 class While(Stmt):
-	def __init__(self, condition: Optional[Expr.Expr], body: Optional[Stmt]):
+	def __init__(self, condition: Expr.Expr, body: Stmt):
 		self.condition = condition
 		self.body = body
 
@@ -98,30 +98,30 @@ class While(Stmt):
 
 
 class Visitor(object):
-	def visitBlockStmt(self, stmt: Optional[Block]):
+	def visitBlockStmt(self, stmt: Block):
 		raise NotImplementedError
 
-	def visitExpressionStmt(self, stmt: Optional[Expression]):
+	def visitExpressionStmt(self, stmt: Expression):
 		raise NotImplementedError
 
-	def visitFunctionStmt(self, stmt: Optional[Function]):
+	def visitFunctionStmt(self, stmt: Function):
 		raise NotImplementedError
 
-	def visitClassStmt(self, stmt: Optional[Class]):
+	def visitClassStmt(self, stmt: Class):
 		raise NotImplementedError
 
-	def visitIfStmt(self, stmt: Optional[If]):
+	def visitIfStmt(self, stmt: If):
 		raise NotImplementedError
 
-	def visitPrintStmt(self, stmt: Optional[Print]):
+	def visitPrintStmt(self, stmt: Print):
 		raise NotImplementedError
 
-	def visitReturnStmt(self, stmt: Optional[Return]):
+	def visitReturnStmt(self, stmt: Return):
 		raise NotImplementedError
 
-	def visitVarStmt(self, stmt: Optional[Var]):
+	def visitVarStmt(self, stmt: Var):
 		raise NotImplementedError
 
-	def visitWhileStmt(self, stmt: Optional[While]):
+	def visitWhileStmt(self, stmt: While):
 		raise NotImplementedError
 

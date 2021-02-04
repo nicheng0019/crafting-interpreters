@@ -39,7 +39,7 @@ def GenerateAst(outputDir):
 
         for f in fields:
             ty, na = f
-            writer.write(', ' + na + ': Optional[' + ty + ']')
+            writer.write(', ' + na + ': ' + ty)
 
         writer.write('):\n')
         for f in fields:
@@ -54,7 +54,7 @@ def GenerateAst(outputDir):
     def defineAst(outputDir, baseName, types):
         with open(os.path.join(outputDir, baseName + ".py"), "w") as fpy:
             fpy.write("# coding=utf-8\n\n")
-            fpy.write('from typing import Optional, List\n')
+            fpy.write('from typing import List\n')
             if baseName == 'Stmt':
                 fpy.write("import Expr\n")
             fpy.write('import Token\n\n\n')
@@ -82,8 +82,8 @@ def GenerateAst(outputDir):
             fpy.write('class Visitor(object):\n')
 
             for cn in classNames:
-                fpy.write('\tdef visit' + cn + baseName + '(self, ' + baseName.lower() + ': Optional[' +
-                          cn + ']):' + '\n')
+                fpy.write('\tdef visit' + cn + baseName + '(self, ' + baseName.lower() + ': ' +
+                          cn + '):' + '\n')
                 fpy.write('\t\traise NotImplementedError\n\n')
 
             fpy.close()

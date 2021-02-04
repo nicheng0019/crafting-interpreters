@@ -1,20 +1,48 @@
 # coding=utf-8
 
-from typing import Optional, List
 import Expr
-import TokenType
+import Stmt
+from TokenType import TokenType
+import Pylox
+from RuntimeError import PyloxRuntimeError
 
 
-class Interpreter(Expr.Visitor):
+class Interpreter(Expr.Visitor, Stmt.Visitor):
     def __init__(self):
         self.binaryOp = dict()
         self.registerBinaryOp()
+        self.checkOps_set = {TokenType.GREATER, TokenType.GREATER_EQUAL, TokenType.LESS, TokenType.LESS_EQUAL,
+                             TokenType.MINUS, TokenType.SLASH, TokenType.STAR}
 
-    def visitLiteralExpr(self, expr: Optional[Expr.Literal]):
+    def interpret(self, statements):
+        try:
+            for statement in statements:
+                self.execute(statement)
+
+        except PyloxRuntimeError as error:
+            Pylox.Lox.runtimeError(error)
+
+    def execute(self, stmt):
+        stmt.accept(self)
+
+    def stringify(self, object):
+        if object is None:
+            return None
+
+        if isinstance(object, float):
+            text = str(object)
+            if text.endswith(".0"):
+                text = text[:len(text) - 2]
+
+            return text
+
+        return str(object)
+
+    def visitLiteralExpr(self, expr: Expr.Literal):
         assert isinstance(expr, Expr.Literal)
         return expr.value
 
-    def visitGroupingExpr(self, expr: Optional[Expr.Grouping]):
+    def visitGroupingExpr(self, expr: Expr.Grouping):
         assert isinstance(expr, Expr.Grouping)
         return self.evaluate(expr.expression)
 
@@ -24,10 +52,11 @@ class Interpreter(Expr.Visitor):
     def visitUnaryExpr(self, expr):
         right = self.evaluate(expr.right)
 
-        if expr.operator.type == TokenType.TokenType.MINUS:
+        if expr.operator.type == TokenType.MINUS:
+            self.checkNumberOperands(expr.operator, right)
             return -float(right)
 
-        elif expr.operator.type == TokenType.TokenType.BANG:
+        elif expr.operator.type == TokenType.BANG:
             return not self.isTruthy(right)
 
         return None
@@ -41,28 +70,35 @@ class Interpreter(Expr.Visitor):
 
         return True
 
+    def addOp(self, operator, left, right):
+        if isinstance(left, float) and isinstance(right, float):
+            return float(left) + float(right)
+
+        if isinstance(left, str) and isinstance(right, str):
+            return str(left) + str(right)
+
+        raise PyloxRuntimeError(operator, "Operands must be two numbers or two strings.")
+
+    def divisionOp(self, operator, left, right):
+        if abs(right) < 1e-15:
+            raise PyloxRuntimeError(operator, "Float division must be non-zero.")
+
+        return left / right
+
     def registerBinaryOp(self):
-        self.binaryOp[TokenType.TokenType.GREATER] = lambda left, right: float(left) > float(right)
-        self.binaryOp[TokenType.TokenType.GREATER_EQUAL] = lambda left, right: float(left) >= float(right)
-        self.binaryOp[TokenType.TokenType.LESS] = lambda left, right: float(left) < float(right)
-        self.binaryOp[TokenType.TokenType.LESS_EQUAL] = lambda left, right: float(left) <= float(right)
-        self.binaryOp[TokenType.TokenType.MINUS] = lambda left, right: float(left) - float(right)
-        self.binaryOp[TokenType.TokenType.PLUS] = lambda left, right: float(left) + float(right)
-        self.binaryOp[TokenType.TokenType.SLASH] = lambda left, right: float(left) / float(right)
-        self.binaryOp[TokenType.TokenType.STAR] = lambda left, right: float(left) * float(right)
+        self.binaryOp[TokenType.GREATER] = lambda _, left, right: float(left) > float(right)
+        self.binaryOp[TokenType.GREATER_EQUAL] = lambda _, left, right: float(left) >= float(right)
+        self.binaryOp[TokenType.LESS] = lambda _, left, right: float(left) < float(right)
+        self.binaryOp[TokenType.LESS_EQUAL] = lambda _, left, right: float(left) <= float(right)
+        self.binaryOp[TokenType.MINUS] = lambda _, left, right: float(left) - float(right)
+        self.binaryOp[TokenType.PLUS] = lambda _, left, right: float(left) + float(right)
+        self.binaryOp[TokenType.SLASH] = self.divisionOp
+        self.binaryOp[TokenType.STAR] = lambda _, left, right: float(left) * float(right)
+        self.binaryOp[TokenType.STAR] = self.addOp
+        self.binaryOp[TokenType.BANG_EQUAL] = lambda _, left, right: not (left == right)
+        self.binaryOp[TokenType.EQUAL_EQUAL] = lambda _, left, right: left == right
 
-        def addOp(left, right):
-            if isinstance(left, float) and isinstance(right, float):
-                return float(left) + float(right)
-
-            if isinstance(left, str) and isinstance(right, str):
-                return str(left) + str(right)
-
-        self.binaryOp[TokenType.TokenType.STAR] = addOp
-        self.binaryOp[TokenType.TokenType.BANG_EQUAL] = lambda left, right: not (left == right)
-        self.binaryOp[TokenType.TokenType.EQUAL_EQUAL] = lambda left, right: left == right
-
-    def visitBinaryExpr(self, expr: Optional[Expr.Binary]):
+    def visitBinaryExpr(self, expr: Expr.Binary):
         left = self.evaluate(expr.left)
         right = self.evaluate(expr.right)
 
@@ -70,4 +106,21 @@ class Interpreter(Expr.Visitor):
         if op is None:
             return None
 
-        return op(left, right)
+        if expr.operator.type in self.checkOps_set:
+            self.checkNumberOperands(expr.operator, left, right)
+
+        return op(expr.operator, left, right)
+
+    def checkNumberOperands(self, operator, left, right=None):
+        if isinstance(left, float) and (isinstance(right, float) or right is None):
+            return
+
+        raise PyloxRuntimeError(operator, "Operand must be a number.")
+
+    def visitExpressionStmt(self, stmt: Stmt.Expression):
+        self.evaluate(stmt.expression)
+
+    def visitPrintStmt(self, stmt: Stmt.Print):
+        value = self.evaluate(stmt.expression)
+        print(self.stringify(value))
+

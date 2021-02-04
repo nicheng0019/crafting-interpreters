@@ -1,7 +1,8 @@
 # coding=utf-8
 
 import Expr
-import TokenType
+import Stmt
+from TokenType import TokenType
 import Pylox
 
 
@@ -9,23 +10,44 @@ class Parser(object):
     def __init__(self, tokens):
         self.tokens = tokens
         self.current = 0
-        self.discards_tokens = {TokenType.TokenType.CLASS, TokenType.TokenType.FUN, TokenType.TokenType.VAR,
-                                TokenType.TokenType.FOR, TokenType.TokenType.IF, TokenType.TokenType.WHILE,
-                                TokenType.TokenType.PRINT, TokenType.TokenType.RETURN}
+        self.discards_tokens = {TokenType.CLASS, TokenType.FUN, TokenType.VAR, TokenType.FOR, TokenType.IF,
+                                TokenType.WHILE, TokenType.PRINT, TokenType.RETURN}
 
     def parse(self):
-        try:
-            return self.expression()
-        except RuntimeError:
-            return None
+        # try:
+        #     return self.expression()
+        # except RuntimeError:
+        #     return None
+
+        statements = []
+        while not self.isAtEnd():
+            statements.append(self.statement())
+
+        return statements
 
     def expression(self):
         return self.equality()
 
+    def statement(self):
+        if self.match(TokenType.PRINT):
+            return self.printStatement()
+
+        return self.expressionStatement()
+
+    def printStatement(self):
+        value = self.expression()
+        self.consume(TokenType.SEMICOLON, "Expect ';' after value.")
+        return Stmt.Print(value)
+
+    def expressionStatement(self):
+        expr = self.expression()
+        self.consume(TokenType.SEMICOLON, "Expect ';' after expression.")
+        return Stmt.Expression(expr)
+
     def equality(self):
         expr = self.comparison()
 
-        while self.match(TokenType.TokenType.BANG_EQUAL, TokenType.TokenType.EQUAL_EQUAL):
+        while self.match(TokenType.BANG_EQUAL, TokenType.EQUAL_EQUAL):
             operator = self.previous()
             right = self.comparison()
             expr = Expr.Binary(expr, operator, right)
@@ -53,7 +75,7 @@ class Parser(object):
         return self.previous()
 
     def isAtEnd(self):
-        return self.peek().type == TokenType.TokenType.EOF
+        return self.peek().type == TokenType.EOF
 
     def peek(self):
         return self.tokens[self.current]
@@ -64,8 +86,8 @@ class Parser(object):
     def comparison(self):
         expr = self.term()
 
-        while self.match(TokenType.TokenType.GREATER, TokenType.TokenType.GREATER_EQUAL,
-                         TokenType.TokenType.LESS, TokenType.TokenType.LESS_EQUAL):
+        while self.match(TokenType.GREATER, TokenType.GREATER_EQUAL,
+                         TokenType.LESS, TokenType.LESS_EQUAL):
             operator = self.previous()
             right = self.term()
             expr = Expr.Binary(expr, operator, right)
@@ -75,7 +97,7 @@ class Parser(object):
     def term(self):
         expr = self.factor()
 
-        while self.match(TokenType.TokenType.MINUS, TokenType.TokenType.PLUS):
+        while self.match(TokenType.MINUS, TokenType.PLUS):
             operator = self.previous()
             right = self.factor()
             expr = Expr.Binary(expr, operator, right)
@@ -85,7 +107,7 @@ class Parser(object):
     def factor(self):
         expr = self.unary()
 
-        while self.match(TokenType.TokenType.SLASH, TokenType.TokenType.STAR):
+        while self.match(TokenType.SLASH, TokenType.STAR):
             operator = self.previous()
             right = self.unary()
             expr = Expr.Binary(expr, operator, right)
@@ -93,7 +115,7 @@ class Parser(object):
         return expr
 
     def unary(self):
-        if self.match(TokenType.TokenType.BANG, TokenType.TokenType.MINUS):
+        if self.match(TokenType.BANG, TokenType.MINUS):
             operator = self.previous()
             right = self.unary()
             return Expr.Unary(operator, right)
@@ -101,21 +123,21 @@ class Parser(object):
         return self.primary()
 
     def primary(self):
-        if self.match(TokenType.TokenType.FALSE):
+        if self.match(TokenType.FALSE):
             return Expr.Literal(False)
 
-        if self.match(TokenType.TokenType.TRUE):
+        if self.match(TokenType.TRUE):
             return Expr.Literal(True)
 
-        if self.match(TokenType.TokenType.NIL):
+        if self.match(TokenType.NIL):
             return Expr.Literal(None)
 
-        if self.match(TokenType.TokenType.NUMBER, TokenType.TokenType.STRING):
+        if self.match(TokenType.NUMBER, TokenType.STRING):
             return Expr.Literal(self.previous().literal)
 
-        if self.match(TokenType.TokenType.LEFT_PAREN):
+        if self.match(TokenType.LEFT_PAREN):
             expr = self.expression()
-            self.consume(TokenType.TokenType.RIGHT_PAREN, "Expect ')' after expression.")
+            self.consume(TokenType.RIGHT_PAREN, "Expect ')' after expression.")
             return Expr.Grouping(expr)
 
         raise self.error(self.peek(), "Expect expression.")
@@ -134,7 +156,7 @@ class Parser(object):
         self.advance()
 
         while not self.isAtEnd():
-            if self.previous().type == TokenType.TokenType.SEMICOLON:
+            if self.previous().type == TokenType.SEMICOLON:
                 return
 
             if self.peek().type in self.discards_tokens:
