@@ -1,10 +1,12 @@
 # coding=utf-8
 
+from typing import List
 import Expr
 import Stmt
 from TokenType import TokenType
 import Pylox
 from RuntimeError import PyloxRuntimeError
+import Environment
 
 
 class Interpreter(Expr.Visitor, Stmt.Visitor):
@@ -13,6 +15,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.registerBinaryOp()
         self.checkOps_set = {TokenType.GREATER, TokenType.GREATER_EQUAL, TokenType.LESS, TokenType.LESS_EQUAL,
                              TokenType.MINUS, TokenType.SLASH, TokenType.STAR}
+        self.environment = Environment.Environment()
 
     def interpret(self, statements):
         try:
@@ -123,4 +126,57 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
     def visitPrintStmt(self, stmt: Stmt.Print):
         value = self.evaluate(stmt.expression)
         print(self.stringify(value))
+
+    def visitVarStmt(self, stmt: Stmt.Var):
+        value = None
+        if stmt.initializer != None:
+            value = self.evaluate(stmt.initializer)
+
+        self.environment.define(stmt.name.lexeme, value)
+
+    def visitVariableExpr(self, expr: Expr.Variable):
+        return self.environment.get(expr.name)
+
+    def visitAssignExpr(self, expr: Expr.Assign):
+        value = self.evaluate(expr.value)
+        self.environment.assign(expr.name, value)
+        return value
+
+    def visitBlockStmt(self, stmt):
+        self.executeBlock(stmt.statements, Environment.Environment(self.environment))
+
+    def executeBlock(self, statements: List[Stmt.Stmt], environment: Environment.Environment):
+        previous = self.environment
+        try:
+            self.environment = environment
+
+            for statement in statements:
+                self.execute(statement)
+        finally:
+            self.environment = previous
+
+    def visitIfStmt(self, stmt: Stmt.If):
+        if self.isTruthy(self.evaluate(stmt.condition)):
+            self.execute(stmt.thenBranch)
+        elif stmt.elseBranch is not None:
+            self.execute(stmt.elseBranch)
+
+        return None
+
+    def visitLogicalExpr(self, expr: Expr.Logical):
+        left = self.evaluate(expr.left)
+
+        if expr.operator.type == TokenType.OR:
+            if self.isTruthy(left):
+                return left
+            else:
+                if not self.isTruthy(left):
+                    return left
+
+        return self.evaluate(expr.right)
+
+    def visitWhileStmt(self, stmt: Stmt.While):
+        while self.isTruthy(self.evaluate(stmt.condition)):
+            self.execute(stmt.body)
+
 
