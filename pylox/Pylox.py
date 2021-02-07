@@ -6,6 +6,7 @@ import TokenType
 import Parser
 import AstPrinter
 import Interpreter
+import Resolver
 
 
 class Lox(object):
@@ -59,6 +60,12 @@ class Lox(object):
 
         parser = Parser.Parser(tokens)
         statements = parser.parse()
+
+        if cls.hadError:
+            return
+
+        resolver = Resolver.Resolver(cls.interpreter)
+        resolver.resolve(statements)
 
         if cls.hadError:
             return

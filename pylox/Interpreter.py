@@ -1,5 +1,6 @@
 # coding=utf-8
 
+import time
 from typing import List
 import Expr
 import Stmt
@@ -7,7 +8,19 @@ from TokenType import TokenType
 import Pylox
 from RuntimeError import PyloxRuntimeError
 import Environment
-from LoxFunction import LoxCallable
+from LoxFunction import LoxCallable, LoxFunction
+from Return import Return
+
+
+class ClockFunc(LoxCallable):
+    def arity(self):
+        return 0
+
+    def __call__(self, interpreter, arguments: List[object]):
+        return time.time()
+
+    def __repr__(self):
+        return "<native fn>"
 
 
 class Interpreter(Expr.Visitor, Stmt.Visitor):
@@ -16,7 +29,11 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.registerBinaryOp()
         self.checkOps_set = {TokenType.GREATER, TokenType.GREATER_EQUAL, TokenType.LESS, TokenType.LESS_EQUAL,
                              TokenType.MINUS, TokenType.SLASH, TokenType.STAR}
-        self.environment = Environment.Environment()
+        self.globals = Environment.Environment()
+        self.environment = self.globals
+
+        self.globals.define("clock", LoxCallable())
+        self.locals = dict()
 
     def interpret(self, statements):
         try:
@@ -29,18 +46,21 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
     def execute(self, stmt):
         stmt.accept(self)
 
-    def stringify(self, object):
-        if object is None:
+    def resolve(self, expr, depth):
+        self.locals[expr] = depth
+
+    def stringify(self, obj):
+        if obj is None:
             return None
 
-        if isinstance(object, float):
-            text = str(object)
+        if isinstance(obj, float):
+            text = str(obj)
             if text.endswith(".0"):
                 text = text[:len(text) - 2]
 
             return text
 
-        return str(object)
+        return str(obj)
 
     def visitLiteralExpr(self, expr: Expr.Literal):
         assert isinstance(expr, Expr.Literal)
@@ -65,12 +85,12 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
 
         return None
 
-    def isTruthy(self, object):
-        if object is None:
+    def isTruthy(self, obj):
+        if obj is None:
             return False
 
-        if isinstance(object, bool):
-            return bool(object)
+        if isinstance(obj, bool):
+            return bool(obj)
 
         return True
 
@@ -136,11 +156,24 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.environment.define(stmt.name.lexeme, value)
 
     def visitVariableExpr(self, expr: Expr.Variable):
-        return self.environment.get(expr.name)
+        #return self.environment.get(expr.name)
+        return self.lookUpVariable(expr.name, expr)
+
+    def lookUpVariable(self, name, expr):
+        distance = self.locals.get(expr, None)
+        if distance:
+            return self.environment.getAt(distance, name.lexeme)
+        else:
+            return self.globals.get(name)
 
     def visitAssignExpr(self, expr: Expr.Assign):
         value = self.evaluate(expr.value)
-        self.environment.assign(expr.name, value)
+
+        distance = self.locals.get(expr, None)
+        if distance:
+            self.environment.assignAt(distance, expr.name, value)
+        else:
+            self.globals.assign(expr.name, value)
         return value
 
     def visitBlockStmt(self, stmt):
@@ -197,4 +230,13 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
 
         return callee(self, arguments)
 
+    def visitFunctionStmt(self, stmt: Stmt.Function):
+        func = LoxFunction(stmt, self.environment)
+        self.environment.define(stmt.name.lexeme, func)
 
+    def visitReturnStmt(self, stmt: Stmt.Return):
+        value = None
+        if stmt.value:
+            value = self.evaluate(stmt.value)
+
+        raise Return(value)

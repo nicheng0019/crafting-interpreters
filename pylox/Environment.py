@@ -30,3 +30,18 @@ class Environment:
             return
 
         raise PyloxRuntimeError(name, "Undefined variable '" + name.lexeme + "'.")
+
+    def getAt(self, distance, name):
+        return self.ancestor(distance).values[name]
+
+    def ancestor(self, distance):
+        environment = self
+        for i in range(distance):
+            environment = environment.enclosing
+
+        return environment
+
+    def assignAt(self, distance, name, value):
+        self.ancestor(distance).values[name.lexeme] = value
+
+
