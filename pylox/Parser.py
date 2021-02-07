@@ -6,6 +6,9 @@ from TokenType import TokenType
 import Pylox
 
 
+class ParseError(RuntimeError):
+    pass
+
 class Parser(object):
     def __init__(self, tokens):
         self.tokens = tokens
@@ -28,15 +31,36 @@ class Parser(object):
 
     def declaration(self):
         try:
+            if self.match(TokenType.FUN):
+                return self.func("function")
             if self.match(TokenType.VAR):
                 return self.varDeclaration()
 
             return self.statement()
 
-        #except ParseError as error:
-        except:
+        except ParseError:
             self.synchronize()
             return None
+
+    def func(self, kind: str):
+        name = self.consume(TokenType.IDENTIFIER, "Expect " + kind + " name.")
+        self.consume(TokenType.LEFT_PAREN, "Expect '(' after " + kind + " name.")
+
+        parameters = []
+        if not self.check(TokenType.RIGHT_PAREN):
+            parameters.append(self.consume(TokenType.IDENTIFIER, "Expect parameter name."))
+
+            while self.match(TokenType.COMMA):
+                if len(parameters) >= 255:
+                    self.error(self.peek(), "Can't have more than 255 parameters.")
+
+                parameters.append(self.consume(TokenType.IDENTIFIER, "Expect parameter name."))
+
+            self.consume(TokenType.RIGHT_PAREN, "Expect ')' after parameters.")
+
+            self.consume(TokenType.LEFT_BRACE, "Expect '{' before " + kind + " body.")
+            body = self.block()
+            return Stmt.Function(name, parameters, body)
 
     def varDeclaration(self):
         name = self.consume(TokenType.IDENTIFIER, "Expect variable name.")
@@ -49,11 +73,9 @@ class Parser(object):
         return Stmt.Var(name, initializer)
 
     def expression(self):
-        #return self.equality()
         return self.assignment()
 
     def assignment(self):
-        #expr = self.equality()
         expr = self.orexpression()
 
         if self.match(TokenType.EQUAL):
@@ -110,6 +132,9 @@ class Parser(object):
         if self.match(TokenType.PRINT):
             return self.printStatement()
 
+        if self.match(TokenType.RETURN):
+            return self.returnStatement()
+
         if self.match(TokenType.WHILE):
             return self.whileStatement()
 
@@ -117,6 +142,15 @@ class Parser(object):
             return Stmt.Block(self.block())
 
         return self.expressionStatement()
+
+    def returnStatement(self):
+        keyword = self.previous()
+        value = None
+        if not self.check(TokenType.SEMICOLON):
+            value = self.expression()
+
+        self.consume(TokenType, "Expect ';' after return value.")
+        return Stmt.Return(keyword, value)
 
     def whileStatement(self):
         self.consume(TokenType.LEFT_PAREN, "Expect '(' after 'while'.")
@@ -257,7 +291,6 @@ class Parser(object):
             right = self.unary()
             return Expr.Unary(operator, right)
 
-        #return self.primary()
         return self.call()
 
     def call(self):
@@ -314,7 +347,7 @@ class Parser(object):
 
     def error(self, token, message):
         Pylox.Lox.error(token=token, message=message)
-        return RuntimeError()
+        return ParseError()
 
     def synchronize(self):
         self.advance()
