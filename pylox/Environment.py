@@ -30,3 +30,4 @@ class Environment:
             return
 
         raise PyloxRuntimeError(name, "Undefined variable '" + name.lexeme + "'.")
+

@@ -32,7 +32,9 @@ class Parser(object):
                 return self.varDeclaration()
 
             return self.statement()
-        except ParseError as error:
+
+        #except ParseError as error:
+        except:
             self.synchronize()
             return None
 
@@ -169,7 +171,7 @@ class Parser(object):
         if increment:
             body = Stmt.Block([body, Stmt.Expression(increment)])
 
-        if condition:
+        if not condition:
             condition = Expr.Literal(True)
 
         body = Stmt.While(condition, body)
@@ -255,7 +257,31 @@ class Parser(object):
             right = self.unary()
             return Expr.Unary(operator, right)
 
-        return self.primary()
+        #return self.primary()
+        return self.call()
+
+    def call(self):
+        expr = self.primary()
+
+        while True:
+            if self.match(TokenType.LEFT_PAREN):
+                expr = self.finishCall(expr)
+            else:
+                break
+
+        return expr
+
+    def finishCall(self, callee):
+        arguments = []
+        if not self.check(TokenType.RIGHT_PAREN):
+            arguments.append(self.expression())
+            while self.match(TokenType.COMMA):
+                if len(arguments) >= 255:
+                    self.error(self.peek(), "Can't have more than 255 arguments.")
+                arguments.append(self.expression())
+
+        paren = self.consume(TokenType.RIGHT_PAREN, "Expect ')' after arguments.")
+        return Expr.Call(callee, paren, arguments)
 
     def primary(self):
         if self.match(TokenType.FALSE):
@@ -305,20 +331,19 @@ class Parser(object):
 
 if __name__ == "__main__":
     import Token
-    import TokenType
 
-    expression = Expr.Binary(Expr.Unary(Token.Token(TokenType.TokenType.MINUS, '-', None, 1), Expr.Literal(123)),
-                             Token.Token(TokenType.TokenType.STAR, "*", None, 1),
+    expression = Expr.Binary(Expr.Unary(Token.Token(TokenType.MINUS, '-', None, 1), Expr.Literal(123)),
+                             Token.Token(TokenType.STAR, "*", None, 1),
                              Expr.Grouping(Expr.Literal(45.67)))
 
     #-123 * (45.67)
-    tokens = [Token.Token(TokenType.TokenType.MINUS, '-', None, 1),
-              Token.Token(TokenType.TokenType.NUMBER, "123", 123, 1),
-              Token.Token(TokenType.TokenType.STAR, "*", None, 1),
-              Token.Token(TokenType.TokenType.LEFT_PAREN, "(", None, 1),
-              Token.Token(TokenType.TokenType.NUMBER, "45.67", 45.67, 1),
-              Token.Token(TokenType.TokenType.RIGHT_PAREN, ")", None, 1),
-              Token.Token(TokenType.TokenType.EOF, "", "", 1)]
+    tokens = [Token.Token(TokenType.MINUS, '-', None, 1),
+              Token.Token(TokenType.NUMBER, "123", 123, 1),
+              Token.Token(TokenType.STAR, "*", None, 1),
+              Token.Token(TokenType.LEFT_PAREN, "(", None, 1),
+              Token.Token(TokenType.NUMBER, "45.67", 45.67, 1),
+              Token.Token(TokenType.RIGHT_PAREN, ")", None, 1),
+              Token.Token(TokenType.EOF, "", "", 1)]
 
     parser = Parser(tokens)
     expr = parser.parse()

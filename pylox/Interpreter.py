@@ -7,6 +7,7 @@ from TokenType import TokenType
 import Pylox
 from RuntimeError import PyloxRuntimeError
 import Environment
+from LoxFunction import LoxCallable
 
 
 class Interpreter(Expr.Visitor, Stmt.Visitor):
@@ -178,5 +179,22 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
     def visitWhileStmt(self, stmt: Stmt.While):
         while self.isTruthy(self.evaluate(stmt.condition)):
             self.execute(stmt.body)
+
+    def visitCallExpr(self, expr: Expr.Call):
+        callee = self.evaluate(expr.callee)
+
+        arguments = []
+        for argument in arguments:
+            arguments.append(self.evaluate(argument))
+
+        if not isinstance(callee, LoxCallable):
+            raise PyloxRuntimeError(expr.paren, "Can only call functions and classes.")
+
+        if len(arguments) != callee.arity:
+            raise PyloxRuntimeError(expr.paren, "Expected " +
+                                    str(callee.arity) + " arguments but got " +
+                                    str(len(arguments)) + ".")
+
+        return callee(self, arguments)
 
 
