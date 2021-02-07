@@ -143,3 +143,4 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
 
     def visitUnaryExpr(self, expr: Expr.Unary):
         self.resolve(expr.right)
+

@@ -240,3 +240,4 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
             value = self.evaluate(stmt.value)
 
         raise Return(value)
+
