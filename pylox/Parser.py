@@ -31,6 +31,8 @@ class Parser(object):
 
     def declaration(self):
         try:
+            if self.match(TokenType.CLASS):
+                return self.classDeclaration()
             if self.match(TokenType.FUN):
                 return self.func("function")
             if self.match(TokenType.VAR):
@@ -41,6 +43,23 @@ class Parser(object):
         except ParseError:
             self.synchronize()
             return None
+
+    def classDeclaration(self):
+        name = self.consume(TokenType.IDENTIFIER, "Expect class name.")
+        superclass = None
+        if self.match(TokenType.LESS):
+            self.consume(TokenType.IDENTIFIER, "Expect superclass name.")
+            superclass = Expr.Variable(self.previous())
+
+        self.consume(TokenType.LEFT_BRACE, "Expect '{' before class body.")
+
+        methods = []
+        while not self.check(TokenType.RIGHT_BRACE) and not self.isAtEnd():
+            methods.append(self.func("method"))
+
+        self.consume(TokenType.RIGHT_BRACE, "Expect '}' after class body.")
+
+        return Stmt.Class(name, superclass, methods)
 
     def func(self, kind: str):
         name = self.consume(TokenType.IDENTIFIER, "Expect " + kind + " name.")
@@ -85,6 +104,8 @@ class Parser(object):
             if isinstance(expr, Expr.Variable):
                 name = expr.name
                 return Expr.Assign(name, value)
+            elif isinstance(expr, Expr.Get):
+                return Expr.Set(expr.object, expr.name, value)
 
             self.error(equals, "Invalid assignment target.")
 
@@ -299,6 +320,9 @@ class Parser(object):
         while True:
             if self.match(TokenType.LEFT_PAREN):
                 expr = self.finishCall(expr)
+            elif self.match(TokenType.DOT):
+                name = self.consume(TokenType.IDENTIFIER, "Expect property name after '.'.")
+                expr = Expr.Get(expr, name)
             else:
                 break
 
@@ -328,6 +352,15 @@ class Parser(object):
 
         if self.match(TokenType.NUMBER, TokenType.STRING):
             return Expr.Literal(self.previous().literal)
+
+        if self.match(TokenType.SUPER):
+            keyword = self.previous()
+            self.consume(TokenType.DOT, "Expect '.' after 'super'.")
+            method = self.consume(TokenType.IDENTIFIER, "Expect superclass method name.")
+            return Expr.Super(keyword, method)
+
+        if self.match(TokenType.THIS):
+            return Expr.This(self.previous())
 
         if self.match(TokenType.IDENTIFIER):
             return Expr.Variable(self.previous())

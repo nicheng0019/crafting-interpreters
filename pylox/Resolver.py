@@ -11,6 +11,14 @@ from enum import Enum
 class FunctionType(Enum):
     NONE = 0
     FUNCTION = 1
+    INITIALIZER = 2
+    METHOD = 3
+
+
+class ClassType(Enum):
+    NONE = 0
+    CLASS = 1
+    SUBCLASS = 2
 
 
 class Resolver(Expr.Visitor, Stmt.Visitor):
@@ -18,6 +26,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         self.interpreter = interpreter
         self.scopes = []
         self.currentFunction = FunctionType.NONE
+        self.currentClass = ClassType.NONE
 
     def visitBlockStmt(self, stmt: Stmt.Block):
         self.beginScope()
@@ -115,6 +124,8 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
             Pylox.Lox.error(stmt.keyword, "Can't return from top-level code.")
 
         if not stmt.value:
+            if self.currentFunction == FunctionType.INITIALIZER:
+                Pylox.Lox.error(stmt.keyword, "Can't return a value from an initializer.")
             self.resolve(stmt.value)
 
     def visitWhileStmt(self, stmt: Stmt.While):
@@ -143,4 +154,60 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
 
     def visitUnaryExpr(self, expr: Expr.Unary):
         self.resolve(expr.right)
+
+    def visitClassStmt(self, stmt: Stmt.Class):
+        enclosingClass = self.currentClass
+        self.currentClass = ClassType.CLASS
+
+        self.declare(stmt.name)
+        self.define(stmt.name)
+
+        if stmt.superclass and (stmt.name.lexeme == stmt.superclass.name.lexeme):
+            Pylox.Lox.error(stmt.superclass.name, "A class can't inherit from itself.")
+
+        if stmt.superclass:
+            self.currentClass = ClassType.SUBCLASS
+            self.resolve(stmt.superclass)
+
+        if stmt.superclass:
+            self.beginScope()
+            self.scopes[-1]["super"] = True
+
+        self.beginScope()
+        self.scopes[-1]["this"] = True
+
+        for method in stmt.methods:
+            declaration = FunctionType.METHOD
+            if method.name.lexeme is "init":
+                declaration = FunctionType.INITIALIZER
+
+            self.resolveFunction(method, declaration)
+
+        self.endScope()
+
+        if stmt.superclass:
+            self.endScope()
+
+        self.currentClass = enclosingClass
+
+    def visitGetExpr(self, expr: Expr.Get):
+        self.resolve(expr.object)
+
+    def visitSetExpr(self, expr: Expr.Set):
+        self.resolve(expr.value)
+        self.resolve(expr.object)
+
+    def visitThisExpr(self, expr: Expr.This):
+        if self.currentClass == ClassType.NONE:
+            Pylox.Lox.error(expr.keyword, "Can't use 'this' outside of a class.")
+
+        self.resolveLocal(expr, expr.keyword)
+
+    def visitSuperExpr(self, expr: Expr.Super):
+        if self.currentClass == ClassType.NONE:
+            Pylox.Lox.error(expr.keyword, "Can't use 'super' outside of a class.")
+        elif self.currentClass != ClassType.SUBCLASS:
+            Pylox.Lox.error(expr.keyword, "Can't use 'super' in a class with no superclass.")
+        self.resolveLocal(expr, expr.keyword)
+
 

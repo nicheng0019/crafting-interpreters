@@ -8,11 +8,12 @@ from TokenType import TokenType
 import Pylox
 from RuntimeError import PyloxRuntimeError
 import Environment
-from LoxFunction import LoxCallable, LoxFunction
+import LoxFunction
 from Return import Return
+from LoxClass import LoxClass, LoxInstance
 
 
-class ClockFunc(LoxCallable):
+class ClockFunc(LoxFunction.LoxCallable):
     def arity(self):
         return 0
 
@@ -32,7 +33,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.globals = Environment.Environment()
         self.environment = self.globals
 
-        self.globals.define("clock", LoxCallable())
+        self.globals.define("clock", LoxFunction.LoxCallable())
         self.locals = dict()
 
     def interpret(self, statements):
@@ -220,7 +221,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         for argument in arguments:
             arguments.append(self.evaluate(argument))
 
-        if not isinstance(callee, LoxCallable):
+        if not isinstance(callee, LoxFunction.LoxCallable):
             raise PyloxRuntimeError(expr.paren, "Can only call functions and classes.")
 
         if len(arguments) != callee.arity:
@@ -231,7 +232,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         return callee(self, arguments)
 
     def visitFunctionStmt(self, stmt: Stmt.Function):
-        func = LoxFunction(stmt, self.environment)
+        func = LoxFunction.LoxFunction(stmt, self.environment, False)
         self.environment.define(stmt.name.lexeme, func)
 
     def visitReturnStmt(self, stmt: Stmt.Return):
@@ -240,4 +241,63 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
             value = self.evaluate(stmt.value)
 
         raise Return(value)
+
+    def visitClassStmt(self, stmt: Stmt.Class):
+        superclass = None
+        if stmt.superclass:
+            superclass = self.evaluate(stmt.superclass)
+            if not isinstance(superclass, LoxClass):
+                raise PyloxRuntimeError(stmt.superclass.name, "Superclass must be a class.")
+
+        self.environment.define(stmt.name.lexeme, None)
+
+        if stmt.superclass:
+            self.environment = Environment.Environment(self.environment)
+            self.environment.define("super", superclass)
+
+        methods = dict()
+        for method in stmt.methods:
+            func = LoxFunction.LoxFunction(method, self.environment, method.name.lexeme is "init")
+            methods[method.name.lexeme] = func
+
+        klass = LoxClass(stmt.name.lexeme, superclass, methods)
+        if superclass:
+            self.environment = self.environment.enclosing
+
+        self.environment.assign(stmt.name, klass)
+
+    def visitGetExpr(self, expr: Expr.Get):
+        obj = self.evaluate(expr.object)
+        if isinstance(obj, LoxInstance):
+            return obj.get(expr.name)
+
+        raise PyloxRuntimeError(expr.name, "Only instances have properties.")
+
+    def visitSetExpr(self, expr: Expr.Set):
+        obj = self.evaluate(expr.object)
+
+        if not isinstance(obj, LoxInstance):
+            raise PyloxRuntimeError(expr.name, "Only instances have fields.")
+
+        value = self.evaluate(expr.value)
+        obj.set(expr.name, value)
+        return value
+
+    def visitThisExpr(self, expr: Expr.This):
+        return self.lookUpVariable(expr.keyword, expr)
+
+    def visitSuperExpr(self, expr: Expr.Super):
+        distance = self.locals[expr]
+        superclass = self.environment.getAt(distance, "super")
+
+        obj = self.environment.getAt(distance - 1, "this")
+
+        method = superclass.findMethod(expr.method.lexeme)
+
+        if not method:
+            raise PyloxRuntimeError(expr.method, "Undefined property '" + expr.method.lexeme + "'.")
+
+        return method.bind(obj)
+
+
 
