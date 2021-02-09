@@ -32,8 +32,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
                              TokenType.MINUS, TokenType.SLASH, TokenType.STAR}
         self.globals = Environment.Environment()
         self.environment = self.globals
-
-        self.globals.define("clock", LoxFunction.LoxCallable())
+        self.globals.define("clock", ClockFunc)
         self.locals = dict()
 
     def interpret(self, statements):
@@ -157,12 +156,11 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.environment.define(stmt.name.lexeme, value)
 
     def visitVariableExpr(self, expr: Expr.Variable):
-        #return self.environment.get(expr.name)
         return self.lookUpVariable(expr.name, expr)
 
     def lookUpVariable(self, name, expr):
         distance = self.locals.get(expr, None)
-        if distance:
+        if distance is not None:
             return self.environment.getAt(distance, name.lexeme)
         else:
             return self.globals.get(name)
@@ -298,6 +296,4 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
             raise PyloxRuntimeError(expr.method, "Undefined property '" + expr.method.lexeme + "'.")
 
         return method.bind(obj)
-
-
 

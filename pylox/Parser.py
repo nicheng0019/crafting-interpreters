@@ -39,7 +39,6 @@ class Parser(object):
                 return self.varDeclaration()
 
             return self.statement()
-
         except ParseError:
             self.synchronize()
             return None

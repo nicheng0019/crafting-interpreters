@@ -1,6 +1,5 @@
 # coding=utf-8
 
-import Interpreter
 from typing import List
 import Stmt
 import Environment
@@ -11,7 +10,7 @@ class LoxCallable:
     def __init__(self):
         pass
 
-    def __call__(self, interpreter: Interpreter.Interpreter, arguments: List[object]):
+    def __call__(self, interpreter, arguments: List[object]):
         return None
 
     @property
@@ -26,7 +25,7 @@ class LoxFunction(LoxCallable):
         self.declaration = declaration
         self.isInitializer = isInitializer
 
-    def __call__(self, interpreter: Interpreter.Interpreter, arguments: List[object]):
+    def __call__(self, interpreter, arguments: List[object]):
         environment = Environment.Environment(self.closure)
         for i in range(len(self.declaration.params)):
             environment.define(self.declaration.params[i].lexeme, arguments[i])
@@ -53,4 +52,5 @@ class LoxFunction(LoxCallable):
         environment = Environment.Environment(self.closure)
         environment.define("this", instance)
         return LoxFunction(self.declaration, environment, self.isInitializer)
+
 

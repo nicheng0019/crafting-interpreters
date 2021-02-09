@@ -12,8 +12,8 @@ class Environment:
         self.values[name] = value
 
     def get(self, name):
-        if name in self.values.keys():
-            return self.values[name]
+        if name.lexeme in self.values.keys():
+            return self.values[name.lexeme]
 
         if self.enclosing:
             return self.enclosing.get(name)

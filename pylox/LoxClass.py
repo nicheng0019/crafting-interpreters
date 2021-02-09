@@ -1,7 +1,6 @@
 # coding=utf-8
 
 from LoxFunction import LoxCallable
-from Interpreter import Interpreter
 from typing import List
 from RuntimeError import PyloxRuntimeError
 
@@ -37,7 +36,7 @@ class LoxClass(LoxCallable):
     def __repr__(self):
         return self.name
 
-    def __call__(self, interpreter: Interpreter, arguments: List[object]):
+    def __call__(self, interpreter, arguments: List[object]):
         instance = LoxInstance(self)
         initializer = self.findMethod("init")
 

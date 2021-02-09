@@ -78,7 +78,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         self.resolveLocal(expr, expr.name)
 
     def resolveLocal(self, expr: Expr.Expr, name: Token.Token):
-        for i in range(len(self.scopes), -1, -1):
+        for i in range(len(self.scopes) - 1, -1, -1):
             if name.lexeme in self.scopes[i].keys():
                 self.interpreter.resolve(expr, len(self.scopes) - 1 - i)
                 return
