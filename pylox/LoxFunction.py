@@ -42,6 +42,7 @@ class LoxFunction(LoxCallable):
 
         return None
 
+    @property
     def arity(self):
         return len(self.declaration.params)
 

@@ -74,11 +74,11 @@ class Parser(object):
 
                 parameters.append(self.consume(TokenType.IDENTIFIER, "Expect parameter name."))
 
-            self.consume(TokenType.RIGHT_PAREN, "Expect ')' after parameters.")
+        self.consume(TokenType.RIGHT_PAREN, "Expect ')' after parameters.")
 
-            self.consume(TokenType.LEFT_BRACE, "Expect '{' before " + kind + " body.")
-            body = self.block()
-            return Stmt.Function(name, parameters, body)
+        self.consume(TokenType.LEFT_BRACE, "Expect '{' before " + kind + " body.")
+        body = self.block()
+        return Stmt.Function(name, parameters, body)
 
     def varDeclaration(self):
         name = self.consume(TokenType.IDENTIFIER, "Expect variable name.")
@@ -169,7 +169,7 @@ class Parser(object):
         if not self.check(TokenType.SEMICOLON):
             value = self.expression()
 
-        self.consume(TokenType, "Expect ';' after return value.")
+        self.consume(TokenType.SEMICOLON, "Expect ';' after return value.")
         return Stmt.Return(keyword, value)
 
     def whileStatement(self):
@@ -186,6 +186,7 @@ class Parser(object):
         while not self.check(TokenType.RIGHT_BRACE) and not self.isAtEnd():
             statements.append(self.declaration())
 
+        #print("block", statements[0].name)
         self.consume(TokenType.RIGHT_BRACE, "Expect '}' after block.")
         return statements
 

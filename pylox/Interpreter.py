@@ -14,6 +14,7 @@ from LoxClass import LoxClass, LoxInstance
 
 
 class ClockFunc(LoxFunction.LoxCallable):
+    @property
     def arity(self):
         return 0
 
@@ -152,7 +153,6 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         value = None
         if stmt.initializer != None:
             value = self.evaluate(stmt.initializer)
-
         self.environment.define(stmt.name.lexeme, value)
 
     def visitVariableExpr(self, expr: Expr.Variable):
@@ -216,7 +216,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         callee = self.evaluate(expr.callee)
 
         arguments = []
-        for argument in arguments:
+        for argument in expr.arguments:
             arguments.append(self.evaluate(argument))
 
         if not isinstance(callee, LoxFunction.LoxCallable):
@@ -235,7 +235,7 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
 
     def visitReturnStmt(self, stmt: Stmt.Return):
         value = None
-        if stmt.value:
+        if stmt.value is not None:
             value = self.evaluate(stmt.value)
 
         raise Return(value)

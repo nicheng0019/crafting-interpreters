@@ -35,7 +35,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
 
     def visitVarStmt(self, stmt: Stmt.Var):
         self.declare(stmt.name)
-        if stmt.initializer:
+        if stmt.initializer is not None:
             self.resolve(stmt.initializer)
 
         self.define(stmt.name)
@@ -123,7 +123,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         if self.currentFunction == FunctionType.NONE:
             Pylox.Lox.error(stmt.keyword, "Can't return from top-level code.")
 
-        if not stmt.value:
+        if stmt.value is not None:
             if self.currentFunction == FunctionType.INITIALIZER:
                 Pylox.Lox.error(stmt.keyword, "Can't return a value from an initializer.")
             self.resolve(stmt.value)
