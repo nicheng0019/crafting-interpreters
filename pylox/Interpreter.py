@@ -116,10 +116,9 @@ class Interpreter(Expr.Visitor, Stmt.Visitor):
         self.binaryOp[TokenType.LESS] = lambda _, left, right: float(left) < float(right)
         self.binaryOp[TokenType.LESS_EQUAL] = lambda _, left, right: float(left) <= float(right)
         self.binaryOp[TokenType.MINUS] = lambda _, left, right: float(left) - float(right)
-        self.binaryOp[TokenType.PLUS] = lambda _, left, right: float(left) + float(right)
         self.binaryOp[TokenType.SLASH] = self.divisionOp
         self.binaryOp[TokenType.STAR] = lambda _, left, right: float(left) * float(right)
-        self.binaryOp[TokenType.STAR] = self.addOp
+        self.binaryOp[TokenType.PLUS] = self.addOp
         self.binaryOp[TokenType.BANG_EQUAL] = lambda _, left, right: not (left == right)
         self.binaryOp[TokenType.EQUAL_EQUAL] = lambda _, left, right: left == right
 

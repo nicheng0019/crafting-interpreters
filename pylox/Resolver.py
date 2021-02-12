@@ -27,6 +27,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         self.scopes = []
         self.currentFunction = FunctionType.NONE
         self.currentClass = ClassType.NONE
+        self.var_used = []
 
     def visitBlockStmt(self, stmt: Stmt.Block):
         self.beginScope()
@@ -51,19 +52,26 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
 
     def beginScope(self):
         self.scopes.append(dict())
+        self.var_used.append(dict())
 
     def endScope(self):
         self.scopes.pop()
+        vardict = self.var_used[-1]
+        for v in vardict.keys():
+            if vardict[v][0] is False:
+                Pylox.Lox.error(token=vardict[v][1], message="local variable " + v + " is never used.")
+
+        self.var_used.pop()
 
     def declare(self, name):
         if len(self.scopes) == 0:
             return
 
-        scope = self.scopes[-1]
-        if name.lexeme in scope.keys():
+        if name.lexeme in self.scopes[-1].keys():
             Pylox.Lox.error(token=name, message="Already variable with this name in this scope.")
 
-        scope[name.lexeme] = False
+        self.scopes[-1][name.lexeme] = False
+        self.var_used[-1][name.lexeme] = [False, name]
 
     def define(self, name):
         if len(self.scopes) == 0:
@@ -72,8 +80,10 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         self.scopes[-1][name.lexeme] = True
 
     def visitVariableExpr(self, expr):
-        if len(self.scopes) > 0 and self.scopes[-1][expr.name.lexeme] == False:
-            Pylox.Lox.error(token=expr.name, message="Can't read local variable in its own initializer.")
+        if len(self.scopes) > 0:
+            defined = self.scopes[-1].get(expr.name.lexeme, None)
+            if defined is False:
+                Pylox.Lox.error(token=expr.name, message="Can't read local variable in its own initializer.")
 
         self.resolveLocal(expr, expr.name)
 
@@ -81,6 +91,7 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         for i in range(len(self.scopes) - 1, -1, -1):
             if name.lexeme in self.scopes[i].keys():
                 self.interpreter.resolve(expr, len(self.scopes) - 1 - i)
+                self.var_used[i][name.lexeme][0] = True
                 return
 
     def visitAssignExpr(self, expr: Expr.Assign):
