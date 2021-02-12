@@ -45,12 +45,13 @@ class LoxClass(LoxCallable):
 
         return instance
 
+    @property
     def arity(self):
         initializer = self.findMethod("init")
         if not initializer:
             return 0
 
-        return initializer.arity()
+        return initializer.arity
 
     def findMethod(self, name):
         if name in self.methods.keys():
