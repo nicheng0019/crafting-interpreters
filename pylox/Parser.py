@@ -54,7 +54,10 @@ class Parser(object):
 
         methods = []
         while not self.check(TokenType.RIGHT_BRACE) and not self.isAtEnd():
-            methods.append(self.func("method"))
+            if self.match(TokenType.CLASS):
+                methods.append(self.func("static_method"))
+            else:
+                methods.append(self.func("method"))
 
         self.consume(TokenType.RIGHT_BRACE, "Expect '}' after class body.")
 

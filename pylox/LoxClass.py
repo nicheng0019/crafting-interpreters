@@ -27,8 +27,9 @@ class LoxInstance:
         self.fields[name.lexeme] = value
 
 
-class LoxClass(LoxCallable):
+class LoxClass(LoxCallable, LoxInstance):
     def __init__(self, name, superclass, methods):
+        LoxInstance.__init__(self, self)
         self.name = name
         self.methods = methods
         self.superclass = superclass
