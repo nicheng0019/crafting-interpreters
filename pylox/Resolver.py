@@ -21,6 +21,12 @@ class ClassType(Enum):
     SUBCLASS = 2
 
 
+class VarUsed:
+    def __init__(self, used, token):
+        self.used = used
+        self.token = token
+
+
 class Resolver(Expr.Visitor, Stmt.Visitor):
     def __init__(self, interpreter):
         self.interpreter = interpreter
@@ -56,12 +62,12 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
 
     def endScope(self):
         self.scopes.pop()
-        vardict = self.var_used[-1]
-        for v in vardict.keys():
-            if vardict[v][0] is False:
-                Pylox.Lox.error(token=vardict[v][1], message="local variable " + v + " is never used.")
 
-        self.var_used.pop()
+        var_used = self.var_used.pop()
+        for var in var_used.keys():
+            if var_used[var].used is False:
+                Pylox.Lox.error(token=var_used[var].token,
+                                message="Variable " + var + " is never used in this scope.")
 
     def declare(self, name):
         if len(self.scopes) == 0:
@@ -70,14 +76,14 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         if name.lexeme in self.scopes[-1].keys():
             Pylox.Lox.error(token=name, message="Already variable with this name in this scope.")
 
-        self.scopes[-1][name.lexeme] = False
-        self.var_used[-1][name.lexeme] = [False, name]
+        self.scopes[-1][name.lexeme] = VarUsed(False, name)
 
     def define(self, name):
         if len(self.scopes) == 0:
             return
 
         self.scopes[-1][name.lexeme] = True
+        self.var_used[-1][name.lexeme] = VarUsed(False, name)
 
     def visitVariableExpr(self, expr):
         if len(self.scopes) > 0:
@@ -91,7 +97,8 @@ class Resolver(Expr.Visitor, Stmt.Visitor):
         for i in range(len(self.scopes) - 1, -1, -1):
             if name.lexeme in self.scopes[i].keys():
                 self.interpreter.resolve(expr, len(self.scopes) - 1 - i)
-                self.var_used[i][name.lexeme][0] = True
+                if name.lexeme in self.var_used[i].keys():
+                    self.var_used[i][name.lexeme].used = True
                 return
 
     def visitAssignExpr(self, expr: Expr.Assign):

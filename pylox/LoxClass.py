@@ -14,13 +14,13 @@ class LoxInstance:
         return self.klass.name + " instance"
 
     def get(self, name):
-        if name in self.fields.keys():
-            return self.fields.keys[name.lexeme]
+        if name.lexeme in self.fields.keys():
+            return self.fields[name.lexeme]
 
         method = self.klass.findMethod(name.lexeme)
         if method:
             return method.bind(self)
-
+        print(self.fields.keys())
         raise PyloxRuntimeError(name, "Undefined property '" + name.lexeme + "'.")
 
     def set(self, name, value):
@@ -59,4 +59,6 @@ class LoxClass(LoxCallable):
 
         if self.superclass:
             return self.superclass.findMethod(name)
+
+        return None
 
