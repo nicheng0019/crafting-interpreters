@@ -1,0 +1,1321 @@
+02_basicarch_slides.pdf
+3D Morphable Face Models - Past, Present and Future_1909.01815.pdf
+5165-learning-word-embeddings-efficiently-with-noise-contrastive-estimation.pdf
+A Bayesian Perspective of Convolutional Neural Networks through a Deconvolutional Generative Model_1811.02657.pdf
+A BAYESIAN PERSPECTIVE ON GENERALIZATION AND STOCHASTIC GRADIENT DESCENT_1710.06451.pdf
+A Bit of Progress in Language Modeling.pdf
+A Brief History of InvSqrt.pdf
+A Brief History of Just-In-Time.pdf
+A categorisation of nurse rostering problems.pdf
+A Closer Look at Memorization in Deep Networks_1706.05394.pdf
+A Correspondence between Continuation Passing Style and Static Single Assignment Form.pdf
+A Fast and Accurate Dependency Parser using Neural Networks.pdf
+A fast and simple algorithm for training neural probabilistic language models_1206.6426.pdf
+A Fast Approximation of the Bilateral Filter using a Signal Processing Approach.pdf
+A Four-step Camera Calibration Procedure with Implicit Image Correction.pdf
+A Framework for Realistic Image Synthesis.pdf
+a fromal theory of inductive inference.pdf
+A General Framework for Low Level Vision.pdf
+A Graph-Based Higher-Order Intermediate Representation.pdf
+A History of MATLAB.pdf
+A Memory Bandwidth-Efficient Hybrid Radix Sort on GPUs_1611.01137.pdf
+A Multi-World Approach to Question Answering about Real-World Scenes based on Uncertain Input_1410.0210v4.pdf
+A non-local algorithm for image denoising.pdf
+A NOTE ON THE EVALUATION OF GENERATIVE MODELS_1511.01844.pdf
+A Novel Embedding Model for Knowledge Base Completion Based on Convolutional Neural Network.pdf
+A Pixel Is Not A Little Square.pdf
+A PRACTICAL CHINESE DEPENDENCY PARSER BASED ON A LARGE-SCALE DATASET_2009.00901.pdf
+A Quadratic Loss Multi-Class SVM for which a Radius–Margin Bound Applies.pdf
+A Reflectance Model for Computer Graphics.pdf
+A Review of Binarized Neural Networks.pdf
+A Simple Graph-Based Intermediate Representation.pdf
+A Simple Introduction to Ergodic Theory.pdf
+A simple neural network module for relational reasoning_1706.01427.pdf
+A Strong Baseline and Batch Normalization Neck for Deep Person Re-identification_1906.08332.pdf
+A Strong Baseline for Fashion Retrieval with Person Re-Identification models_2003.04094.pdf
+A Survey of Neural Networks and Formal Languages_2006.01338v1.pdf
+A Survey of Top-k Query Processing Techniques in Relational Database Systems.pdf
+A Survey on Graph Kernels_1903.11835.pdf
+A Survey on Visual Transformer_2012.12556v1.pdf
+A Tutorial on Particle Filtering and Smoothing.pdf
+A Tutorial on VAEs_2006.10273.pdf
+A two-pronged progress in structured dense matrix vector multiplication_1611.01569.pdf
+A Unified Theory of Garbage Collection.pdf
+A unifying mutual information view of metric learning cross-entropy vs pairwise losses_2003.08983v2.pdf
+ABD-Net Attentive but Diverse Person Re-Identification_1908.01114.pdf
+Accurate Unlexicalized Parsing.pdf
+Accurate, Large Minibatch SGD Training ImageNet in 1 Hour_1706.02677.pdf
+AdaBins Depth Estimation using Adaptive Bins_2011.14141v1.pdf
+AdaBoost and Forward Stagewise Regression are First-Order Convex Optimization Methods.pdf
+Advanced Image Processing Homework 1 Color Quantization A Median Cut Approach.pdf
+Adversarial Examples Improve Image Recognition_1911.09665.pdf
+Affinity Derivation and Graph Merge for Instance Segmentation_1811.10870.pdf
+Afifi_Deep_White-Balance_Editing_CVPR_2020_paper.pdf
+Afifi_What_Else_Can_Fool_Deep_Learning_Addressing_Color_Constancy_Errors_ICCV_2019_paper.pdf
+Afifi_When_Color_Constancy_Goes_Wrong_Correcting_Improperly_White-Balanced_Images_CVPR_2019_paper.pdf
+AGA Attribute-Guided Augmentation_1612.02559.pdf
+Agglomerative Fuzzy K-means Clustering Algorithm with Selection of Number of Clusters.pdf
+Aggregation and Finetuning for Clothes Landmark Detection_2005.00419.pdf
+Algorithms_for_Hyper-Parameter_Optimization.pdf
+amershi-icse-2019_Software_Engineering_for_Machine_Learning.pdf
+an effective sample synthesis method for few-shot object recognition_1806.04734.pdf
+An Efficient Representation for Irradiance Environment Maps.pdf
+An Empirical Study of Spatial Attention Mechanisms in Deep Networks_1904.05873.pdf
+AN EXPONENTIAL LEARNING RATE SCHEDULE FOR DEEP LEARNING_1910.07454v1.pdf
+An intriguing failing of convolutional neural networks and the CoordConv solution_1807.03247.pdf
+An Introduction to Propensity Score Methods for Reducing the Effects of Confounding in Observational Studies.pdf
+An Introduction to Quantum Computing for Non-Physicists.pdf
+An Introduction to the Kalman Filter.pdf
+An Overview of BRDF Models.pdf
+An Overview of Deep Learning Architectures in Few-Shot Learning Domain_2008.06365.pdf
+An Overview of Multi-Task Learning in Deep Neural Networks_1706.05098.pdf
+Analyzing noise in autoencoders and deep networks_1406.1831.pdf
+an_efficient_framework_for_learning_sentence_representations.pdf
+an_empirical_study_of_binary_neural_networks_optimisation.pdf
+an_optimization_view_on_dynamic_routing_between_capsules.pdf
+Apparel Classification with Style.pdf
+Approximate Bayesian Image Interpretation using_1307.0060v1.pdf
+Approximation Algorithms.pdf
+Approximation beats concentration An approximation view on inference with smooth radial kernels.pdf
+Arbitrary-Oriented Scene Text Detection via Rotation Proposals_1703.01086.pdf
+Are All Layers Created Equal_1902.01996.pdf
+Are GANs Created Equal A Large-Scale Study_1711.10337.pdf
+ArrayFire a GPU acceleration platform.pdf
+Ask Your Neurons A Deep Learning Approach to Visual Question Answering_1605.02697.pdf
+Associative Long Short-Term Memory_1602.03032.pdf
+Assuring the Machine Learning Lifecycle_1905.04223.pdf
+Asymmetric Loss For Multi-Label Classification_2009.14119.pdf
+Attribute Mix Semantic Data Augmentation for Fine-grained Recognition_2004.02684v2.pdf
+Auto-Encoding Variational Bayes_1312.6114.pdf
+AutoAugment Learning Augmentation Strategies from Data_1805.09501.pdf
+Autoencoders, Minimum Description Length and Helmholtz Free Energy.pdf
+Autograd Effortless Gradients in Numpy.pdf
+Automatic Differentiation in Machine Learning.pdf
+Automatic differentiation in ML Where we are and where we should be goingr.pdf
+automatic_differentiation_in_pytorch.pdf
+Averaging Weights Leads to Wider Optima and Better Generalization_1803.05407.pdf
+AXIAL ATTENTION IN MULTIDIMENSIONAL TRANSFORMERS_1912.12180.pdf
+Axial-DeepLab Stand-Alone Axial-Attention for Panoptic Segmentation_2003.07853.pdf
+Bag of Tricks and A Strong Baseline for Deep Person Re-identification_1903.07071.pdf
+Baik_Learning_to_Forget_for_Meta-Learning_CVPR_2020_paper.pdf
+Bayesian Approaches To Color Vision.pdf
+BAYESIAN ESTIMATION OF TIME-VARYING SYSTEMS.pdf
+Bayesian surprise attracts human attention.pdf
+BCNet Learning Body and Cloth Shape from A Single Image_2004.00214.pdf
+BENCHMARKING NEURAL NETWORK ROBUSTNESS TO COMMON CORRUPTIONS AND PERTURBATIONS_1903.12261.pdf
+BERTSCORE_1904.09675.pdf
+Beyond Trade-off Accelerate FCN-based Face Detector with Higher Accuracy.pdf
+Beyond triplet loss a deep quadruplet network for person re-identification_1704.01719.pdf
+Bilateral Guided Upsampling.pdf
+Bilinear CNN Models for Fine-grained Visual Recognition.pdf
+BIRCH.pdf
+blackwell-chomsky-hierarchy.pdf
+Blocks World Revisited Image Understanding Using Qualitative Geometry and Mechanics.pdf
+Boosting the Margin A New Explanation for the Effectiveness of Voting Methods.pdf
+Bootstrap Your Own Latent A New Approach to Self-Supervised Learning_2006.07733.pdf
+Bottleneck Transformers for Visual Recognition_2101.11605v1.pdf
+BPR Bayesian Personalized Ranking from Implicit Feedback_1205.2618.pdf
+Brook for GPUs Stream Computing on Graphics Hardware.pdf
+call-by-name call-by-value and the lambda-calculus.pdf
+Camera Calibration with Distortion Models and Accuracy Evaluation.pdf
+Camera Models and Fundamental Concepts Used in Geometric Computer Vision.pdf
+Cascaded Pyramid Network for Multi-Person Pose Estimation_1711.07319v2.pdf
+Castle in the Sky Dynamic Sky Replacement and Harmonization in Videos_2010.11800.pdf
+Causal and Counterfactual Inference.pdf
+Causal Architecture, Complexity and Self-Organization in Time Series and Cellular Automata.pdf
+Causal feature selection.pdf
+Causal inference in statistics An overview.pdf
+CCNet Criss-Cross Attention for Semantic Segmentation_1811.11721.pdf
+Challenges in Deploying Machine Learning_2011.09926.pdf
+CHALLENGES IN THE DEPLOYMENT AND OPERATION OF MACHINE LEARNING IN PRACTICE.pdf
+Character-Level Language Modeling with Deeper Self-Attention_1808.04444.pdf
+CHARACTERIZING SIGNAL PROPAGATION TO CLOSE THE PERFORMANCE GAP IN UNNORMALIZED RESNETS_2101.08692.pdf
+Cheng_Video2Shop_Exact_Matching_CVPR_2017_paper.pdf
+Chen_Learning_to_See_CVPR_2018_paper.pdf
+Chen_MaskLab_Instance_Segmentation_CVPR_2018_paper.pdf
+Church a language for generative models.pdf
+Class Noise vs. Attribute Noise A Quantitative Study of Their Impacts.pdf
+CLASSES FOR FAST MAXIMUM ENTROPY TRAINING .pdf
+CLASSES FOR FAST MAXIMUM ENTROPY TRAINING.pdf
+Classification is a Strong Baseline for Deep Metric Learning.pdf
+CLEVR A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning.pdf
+Clothing Retrieval with Visual Attention Model_1710.11446v1.pdf
+CMSIS-NN Efficient Neural Network Kernels for Arm Cortex-M CPUs_1801.06601.pdf
+CNN EXPLAINER Learning Convolutional Neural Networks with Interactive Visualization_2004.15004v1.pdf
+CNN-RNN a large-scale hierarchical image classification framework.pdf
+Code Generation in the Polyhedral Model Is Easier Than You Think.pdf
+Compact Bilinear Pooling_1511.06062.pdf
+Compilation by Transformation in Non-Strict Functional Languages.pdf
+Compiling with Continuations, Continued.pdf
+Complexity, D epth, and Sophistication.pdf
+Composite Quantization for Approximate Nearest Neighbor Search.pdf
+Compounding the Performance Improvements of Assembled Techniques in a Convolutional Neural Network_2001.06268.pdf
+Computation on Sparse Neural Networks an Inspiration for Future Hardware_2004.11946v1.pdf
+Computational Mechanics Pattern and Prediction, Structure and Simplicity.pdf
+CondConv Conditionally Parameterized Convolutions for Efficient Inference_1904.04971.pdf
+CONDITIONAL COMPUTATION IN NEURAL NETWORKS FOR FASTER MODELS_1511.06297.pdf
+Conditional Convolutions for Instance Segmentation.pdf
+Conditional Generative Adversarial Nets_1411.1784.pdf
+Conditional Random Fields as Recurrent Neural Networks_1502.03240.pdf
+Conditional Random Fields.pdf
+Cones and Interior-Point Algorithms for Structured Convex Optimization involving Powers and Exponentials.pdf
+CONSISTENCY OF SPECTRAL CLUSTERING_0804.0678.pdf
+Context Encoders Feature Learning by Inpainting_1604.07379.pdf
+Continual Lifelong Learning with Neural Networks A Review_1802.07569.pdf
+CONTRIBUTION TRACKING PARTICIPATING IN TASK-ORIENTED DIALOGUE UNDER UNCERTAINTY.pdf
+ConvNets and ImageNet Beyond Accuracy Understanding Mistakes and Uncovering Biases_1711.11443.pdf
+Convolution Pyramids.pdf
+Convolutional 2D Knowledge Graph Embeddings_1707.01476.pdf
+Convolutional Gaussian Processes_1709.01894.pdf
+Convolutional Oriented Boundaries From Image Segmentation to High-Level Tasks_1701.04658.pdf
+Convolutional Pose Machines_1602.00134.pdf
+Cortes-Vapnik1995_Article_Support-vectorNetworks.pdf
+Counterfactual Explanations for Machine Learning A Review_2010.10596.pdf
+Counterfactual Reasoning and Learning Systems The Example of Computational Advertising.pdf
+CP-VTON+ Clothing Shape and Texture Preserving Image-Based Virtual Try-On.pdf
+CRADLE Cross-Backend Validation to Detect and Localize Bugs in Deep Learning Libraries.pdf
+Cross-domain Image Retrieval with a Dual Attribute-aware Ranking Network_1505.07922.pdf
+Cui_Class-Balanced_Loss_Based_on_Effective_Number_of_Samples_CVPR_2019_paper.pdf
+CURRICULUM LOSS ROBUST LEARNING AND GENERALIZATION AGAINST LABEL CORRUPTION_1905.10045.pdf
+CurveLane-NAS_2007.12147v1.pdf
+Cyclical Learning Rates for Training Neural Networks_1506.01186.pdf
+d-Separation from theorems to algorithms 1304.1505.pdf
+D-Separation, Forecasting, and Economic Science A Conjecture.pdf
+Darkroom Compiling High-Level Image Processing Code into Hardware Pipelines.pdf
+Data Augmentation by Pairing Samples for Images Classification_1801.02929.pdf
+Data Scientists in Software Teams State of the Art and Challenges.pdf
+Data Uncertainty Learning in Face Recognition_2003.11339.pdf
+Data-driven Meta-set Based Fine-Grained Visual Classification_2008.02438.pdf
+Decoupling Algorithms from Schedules for Easy Optimization of Image Processing Pipelines.pdf
+DECOUPLING REPRESENTATION AND CLASSIFIER FOR LONG-TAILED RECOGNITION.pdf
+Deep Adversarial Metric Learning.pdf
+Deep Bilateral Learning for Real-Time Image Enhancement_1707.02880.pdf
+Deep Boosting.pdf
+Deep Convolutional Ranking for Multilabel Image Annotation_1312.4894.pdf
+Deep Gaussian Processes for Regression using Approximate Expectation Propagation_1602.04133.pdf
+Deep Generative Stochastic Networks Trainable by Backprop.pdf
+Deep Generative Stochastic Networks Trainable by Backprop_1306.1091.pdf
+Deep High-Resolution Representation Learning for Human Pose Estimation_1902.09212.pdf
+Deep Hough-Transform Line Priors_2007.09493v1.pdf
+Deep Image Homography Estimation_1606.03798.pdf
+Deep LAC Deep Localization, Alignment and Classification for Fine-grained Recognition.pdf
+Deep Learning and the Information Bottleneck Principle_1503.02406.pdf
+Deep Learning for Person Re-identification A Survey and Outlook_2001.04193.pdf
+Deep Learning in Neural Networks An Overview_1404.7828.pdf
+Deep Learning over Multi-field Categorical Data_1601.02376.pdf
+Deep Metric Learning with Hierarchical Triplet Loss.pdf
+Deep multi-task learning with low level tasks supervised at lower layers.pdf
+DEEP NEURAL NETWORKS AS GAUSSIAN PROCESSES_1711.00165.pdf
+Deep Neural Networks Motivated by Partial Differential Equations_1804.04272.pdf
+Deep Residual Learning for Image Recognition_1512.03385.pdf
+DeepGenModelsTutorial.pdf
+DeepMark One-Shot Clothing Detection_1910.01225v1.pdf
+DeepMark++ CenterNet-based Clothing Detection_2006.00710v1.pdf
+DeepPose_Human Pose Estimation via Deep Neural Networks.pdf
+DeepRank A New Deep Architecture for Relevance Ranking in Information Retrieval_1710.05649.pdf
+Deformable Convolutional Networks_1703.06211.pdf
+DEFORMABLE DETR_2010.04159v2.pdf
+DEFORMABLE KERNELS ADAPTING EFFECTIVE RECEPTIVE FIELDS FOR OBJECT DEFORMATION_1910.02940.pdf
+Degrees of Freedom in Deep Neural Networks_1603.09260.pdf
+Dense Associative Memory for Pattern Recognition_1606.01164.pdf
+DensePose Dense Human Pose Estimation In The Wild.pdf
+DENSITY ESTIMATION USING REAL NVP_1605.08803.pdf
+Density-Preserving Data Visualization Unveils Dynamic Patterns of Single-Cell Transcriptomic Variability.pdf
+Designing Efficient Sorting Algorithms for Manycore GPUs.pdf
+Designing Network Design Spaces_2003.13678.pdf
+Destruction and Construction Learning for Fine-grained Image Recognition.pdf
+Detailed Garment Recovery from a Single-View Image_1608.01250.pdf
+Detect-to-Retrieve Efficient Regional Aggregation for Image Search_1812.01584.pdf
+DIFFTAICHI DIFFERENTIABLE PROGRAMMING FOR PHYSICAL SIMULATION_1910.00935.pdf
+Direct and Indirect Effects.pdf
+Discourse-Based Objectives for Fast Unsupervised Sentence Representation Learning_1705.00557.pdf
+DISCOVERING OBJECTS AND THEIR RELATIONS FROM ENTANGLED SCENE REPRESENTATIONS.pdf
+DISCRIMINATIVE LEARNING AND SPANNING TREE ALGORITHMS FOR DEPENDENCY PARSING.pdf
+Disentangled Non-Local Neural Networks_2006.06668.pdf
+Disentangling 3D Pose in A Dendritic CNN for Unconstrained 2D Face Alignment.pdf
+DISTILLING THE KNOWLEDGE OF BERT FOR TEXT GENERATION_1911.03829v1.pdf
+Distributed Quantum Computing.pdf
+DISTRIBUTIONAL SMOOTHING WITH VIRTUAL ADVERSARIAL TRAINING_1507.00677.pdf
+Do we Need Hundreds of Classifiers to Solve Real World Classification Problems.pdf
+Domain-Size Pooling in Local Descriptors DSP-SIFT_1412.8556.pdf
+DOREFA-NET_1606.06160.pdf
+Dreaming to Distill Data-free Knowledge Transfer via DeepInversion_1912.08795.pdf
+Dryad Distributed Data-Parallel Programs from Sequential Building Blocks.pdf
+Du2Net Learning Depth Estimation from Dual-Cameras and Dual-Pixels_2003.14299.pdf
+Dual Path Networks_1707.01629.pdf
+Dynamic Bayesian Networks Representation, Inference and Learning.pdf
+Dynamic Capacity Networks_1511.07838.pdf
+Dynamic Programming Algorithms for Transition-Based Dependency Parsers.pdf
+Edge-Preserving Decompositions for Multi-Scale Tone and Detail Manipulation.pdf
+Edo_Collins_Deep_Feature_Factorization_ECCV_2018_paper.pdf
+efficient algorithm with neural netiwork behavior.pdf
+Efficient Diffusion on Region Manifolds Recovering Small Objects with Compact CNN Representations_1611.05113.pdf
+Efficient Spherical Harmonic Evaluation.pdf
+Efficient Top-K Query Processing on Massively Parallel Hardware.pdf
+Efficient Transformers A Survey_2009.06732.pdf
+Eigenvalue and Generalized Eigenvalue Problems Tutorial_1903.11240.pdf
+ELoPE Fine-Grained Visual Classification with Efficient Localization, Pooling and Embedding_1911.07344v1.pdf
+Elsen_Fast_Sparse_ConvNets_CVPR_2020_paper.pdf
+Elucidating image-to-set prediction An analysis of models, losses and datasets_1904.05709.pdf
+Empirical Analysis of the Hessian of Over-Parametrized Neural Networks.pdf
+Encoding-based Memory Modules for Recurrent Neural Networks_2001.11771.pdf
+End-to-end Lane Detection through Differentiable Least-Squares Fitting_1902.00293v3.pdf
+End-to-end Lane Shape Prediction with Transformers_2011.04233.pdf
+End-To-End Memory Networks_1503.08895.pdf
+End-to-End Object Detection with Transformers_2005.12872.pdf
+End-to-End Wireframe Parsing_1905.03246.pdf
+Ergodic Theory.pdf
+Essentially No Barriers in Neural Network Energy Landscape_1803.00885.pdf
+Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation_1308.3432.pdf
+Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation_1308.3432v1.pdf
+Expectation Propagation for Approximate Bayesian Inference.pdf
+Experimental Analysis of BRDF Models.pdf
+Explainable Machine Learning in Deployment_1909.06342.pdf
+EXPLAINING AND HARNESSING ADVERSARIAL EXAMPLES_1412.6572.pdf
+Explaining Deep Neural Networks_2010.01496.pdf
+Explaining the Success of AdaBoost and Random Forests as Interpolating Classifiers.pdf
+Exploring the Limits of Weakly Supervised Pretraining.pdf
+Exponentially Increasing the Capacity-to-Computation Ratio for Conditional Computation in Deep Learning_1406.7362.pdf
+Exposure A White-Box Photo Post-Processing Framework_1709.09602.pdf
+exposure-fusion.pdf
+Eyeriss A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks.pdf
+Face Alignment Assisted by Head Pose Estimation_1507.03148v2.pdf
+FairMOT On the Fairness of Detection and Re-Identification in Multiple Object Tracking_2004.01888v5.pdf
+fantastic_generalization_measures_and_where_to_find_them.pdf
+Fashion Retrieval via Graph Reasoning Networks on a Similarity Pyramid_1908.11754.pdf
+Fast AutoAugment_1905.00397.pdf
+Fast Bilateral-Space Stereo for Synthetic Defocus.pdf
+Fast Dynamic Routing Based on Weighted Kernel Density Estimation_1805.10807.pdf
+Fast Exact Multiplication by the Hessian.pdf
+Fast Gradient-Based Inference with Continuous Latent Variable Models in Auxiliary Form_1306.0733.pdf
+Fast Local Laplacian Filters Theory and Applications.pdf
+Fast Median and Bilateral Filtering.pdf
+Faster AutoAugment.pdf
+FeatherCNN Fast Inference Computation with TensorGEMM on ARM Architectures.pdf
+Feature Space Transfer for Data Augmentation.pdf
+Few-shot Learning A Survey_1904.05046v1.pdf
+Few-Shot Learning Through an Information Retrieval Lens_1707.02610.pdf
+FFJORD FREE-FORM CONTINUOUS DYNAMICS FOR SCALABLE REVERSIBLE GENERATIVE MODELS_1810.01367.pdf
+Fine-Grained Fashion Similarity Learning by Attribute-Specific Embedding Network_2002.02814.pdf
+Fine-grained Iterative Attention Network for Temporal Language Localization in Videos_2008.02448.pdf
+Fine-grained Recognition Accounting for Subtle Differences between Similar Classes_1912.06842v1.pdf
+Fine-Grained Visual Classification via Progressive Multi-Granularity Training of Jigsaw Patches_2003.03836v3.pdf
+Fine-Grained Visual Classification with Efficient End-to-end Localization_2005.05123v1.pdf
+Fine-Grained Visual Comparisons with Local Learning.pdf
+Fisher Discriminant Triplet and Contrastive Losses for Training Siamese Networks_2004.04674.pdf
+Fixing the train-test resolution discrepancy_1906.06423.pdf
+FLIF FREE LOSSLESS IMAGE FORMAT BASED ON MANIAC COMPRESSION.pdf
+Flowing ConvNets for Human Pose Estimation in Videos_1506.02897.pdf
+Formal Language Theory Meets Modern NLP_2102.10094v1.pdf
+Freeze and Chaos for DNNs an NTK view of Batch Normalization, Checkerboard and Boundary Effects_1907.05715v1.pdf
+From Big to Small Multi-Scale Local Planar Guidance for Monocular Depth Estimation_1907.10326v5.pdf
+From handcrafted to deep local features_1807.10254.pdf
+From_ranknet_to_lambdarank_to_lambdamart_An_overvi.pdf
+FRUSTRATINGLY SHORT ATTENTION SPANS IN NEURAL LANGUAGE MODELING_1702.04521.pdf
+Fully Connected Deep Structured Networks_1503.02351.pdf
+Fully Convolutional Instance-aware Semantic Segmentation_1611.07709.pdf
+GAN Compression Efficient Architectures for Interactive Conditional GANs_2003.08936.pdf
+GarNet A Two-Stream Network for Fast and Accurate 3D Cloth Draping_1811.10983.pdf
+GATED GRAPH SEQUENCE NEURAL NETWORKS_1511.05493.pdf
+GAUSSIAN ERROR LINEAR UNITS_1606.08415v3.pdf
+Gaussian Process Behaviour in Wide Deep Neural Networks.pdf
+generalization_bounds_for_deep_convolutional_neural_networks.pdf
+Generalized Cross Entropy Loss for Training Deep Neural Networks with Noisy Labels_1805.07836.pdf
+Generalized Denoising Auto-Encoders as Generative Models_1305.6663.pdf
+Generating Images with Perceptual Similarity Metrics based on Deep Networks.pdf
+Generating Representative Headlines for News Stories_2001.09386.pdf
+Generative Adversarial Nets_1406.2661v1.pdf
+GENERATIVE MULTI-ADVERSARIAL NETWORKS_1611.01673.pdf
+Globally-Optimal Greedy Algorithms for Tracking a Variable Number of Objects.pdf
+Goal-GAN Multimodal Trajectory Prediction Based on Goal Position Estimation_2010.01114.pdf
+Godard_Digging_Into_Self-Supervised_Monocular_Depth_Estimation_ICCV_2019_paper.pdf
+Godel Machines Self-Referential Universal Problem Solvers Making Provably Optimal Self-Improvements.pdf
+Good Practice in CNN Feature Transfer_1604.00133.pdf
+Google Vizier A Service for Black-Box Optimization.pdf
+grabcut-siggraph04.pdf
+Grad-CAM Visual Explanations from Deep Networks via Gradient-based Localization_1610.02391.pdf
+GRADIENT DESCENT PROVABLY OPTIMIZES OVER-PARAMETERIZED NEURAL NETWORKS_1810.02054.pdf
+GradNorm Gradient Normalization for Adaptive Loss Balancing in Deep Multitask Networks_1711.02257.pdf
+Graph Embedding and Extensions A General Framework for Dimensionality Reduction.pdf
+Graph Kernels A Survey_1904.12218.pdf
+Green AI_1907.10597.pdf
+GridMask Data Augmentation_2001.04086.pdf
+Group Normalization_1803.08494.pdf
+gvnn_1607.07405v3.pdf
+Halide A Language and Compiler for Optimizing Parallelism, Locality, and Recomputation in Image Processing Pipelines.pdf
+Hand Keypoint Detection in Single Images using Multiview Bootstrapping_1704.07809.pdf
+HAQ Hardware-Aware Automated Quantization with Mixed Precision_1811.08886.pdf
+Hard-Aware Deeply Cascaded Embedding.pdf
+Hardware and Software Optimizations for Accelerating Deep Neural Networks Survey of Current Trends, Challenges, and the Road Ahead_2012.11233.pdf
+Hashing as Tie-Aware Learning to Rank.pdf
+He_Filter_Pruning_via_Geometric_Median_for_Deep_Convolutional_Neural_Networks_CVPR_2019_paper.pdf
+He_Local_Descriptors_Optimized_CVPR_2018_paper.pdf
+Hide-and-Seek A Data Augmentation Technique for Weakly-Supervised Localization and Beyond_1811.02545.pdf
+Hierarchical Probabilistic Neural Network Language Model.pdf
+High Accuracy Optical Flow Estimation Based on a Theory for Warping.pdf
+High-dimensional dynamics of generalization error in neural networks_1710.03667.pdf
+High-Performance Large-Scale Image Recognition Without Normalization_2102.06171.pdf
+High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs.pdf
+High-Resolution Representations for Labeling Pixels and Regions_1904.04514.pdf
+hogwild-a-lock-free-approach-to-parallelizing-stochastic-gradient-descent.pdf
+Holistically-Attracted Wireframe Parsing_2003.01663.pdf
+Holistically-Nested Edge Detection_1504.06375.pdf
+Hopfield Networks is All You Need_2008.02217.pdf
+Hou_Learning_Lightweight_Lane_Detection_CNNs_by_Self_Attention_Distillation_ICCV_2019_paper.pdf
+How Does Batch Normalization Help Optimization_1805.11604.pdf
+How far are we from solving the 2D & 3D Face Alignment problem.pdf
+How Generative Adversarial Networks and Its Variants Work An Overview of GAN_1711.05914v6.pdf
+How Sensitive are Sensitivity-Based Explanations_1901.09392v1.pdf
+How to Start Training The Effect of Initialization and Architecture_1803.01719.pdf
+HS-ResNet Hierarchical-Split Block on Convolutional Neural Network_2010.07621.pdf
+Huang_O2U-Net_A_Simple_Noisy_Label_Detection_Approach_for_Deep_Neural_ICCV_2019_paper.pdf
+Human Parsing with Contextualized Convolutional Neural Network.pdf
+Human_Homo_sapiens_Facial_Attractiveness_and_Sexua.pdf
+Hung_SCOPS_Self-Supervised_Co-Part_Segmentation_CVPR_2019_paper.pdf
+Hypercolumns for Object Segmentation and Fine-grained Localization.pdf
+Identifying and attacking the saddle point problem in high-dimensional non-convex optimization_1406.2572.pdf
+Identity Mappings in Deep Residual Networks_1603.05027.pdf
+IDF++ Analyzing and Improving Integer Discrete Flows for Lossless Compression_2006.12459.pdf
+Ignatov_DSLR-Quality_Photos_on_ICCV_2017_paper.pdf
+Image Classification with Deep Learning in the Presence of Noisy Labels A Survey_1912.05170.pdf
+Image denoising Can plain Neural Networks compete with BM3D.pdf
+Image Question Answering A Visual Semantic Embedding Model and a New Dataset_1505.02074v1.pdf
+Image Style Transfer Using Convolutional Neural Networks.pdf
+Image Stylization for Robust Features_2008.06959.pdf
+Image Transformer_1802.05751.pdf
+Image-Based Material Editing.pdf
+Image-Based Modeling and Photo Editing.pdf
+IMAGE-GUIDED NEURAL OBJECT RENDERING_1811.10720.pdf
+Image-to-Image Translation with Conditional Adversarial Networks_1611.07004.pdf
+IMAGENET-TRAINED CNNS ARE BIASED TOWARDS TEXTURE; INCREASING SHAPE BIAS IMPROVES ACCURACY AND ROBUSTNESS_1811.12231.pdf
+IMP Instance Mask Projection for High Accuracy Semantic Segmentation of Things_1906.06597.pdf
+IMP Instance Mask Projection for High Accuracy Semantic Segmentation of Things_1906.06597v1.pdf
+Implicit Neural Representations with Periodic Activation Functions.pdf
+IMPORTANCE WEIGHTED AUTOENCODERS_1509.00519.pdf
+Improved Deep Metric Learning with Multi-class N-pair Loss Objective.pdf
+Improved Neural Machine Translation with SMT Features.pdf
+Improved Regularization of Convolutional Neural Networks with Cutout_1708.04552.pdf
+Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks.pdf
+Improving One-Shot Learning through Fusing Side Information_1710.08347.pdf
+Improving Rotated Text Detection with Rotation Region Proposal Networks_1811.07031.pdf
+In Defense of the Triplet Loss Again Learning Robust Person Re-Identification with Fast Approximated Triplet Loss and Label Distillation_1912.07863.pdf
+In-Datacenter Performance Analysis of a Tensor Processing Unit.pdf
+Incremental, Iterative Data Processing with Timely Dataflow.pdf
+Incrementality in Deterministic Dependency Parsing.pdf
+Infinite Mixtures of Gaussian Process Experts.pdf
+INFORMATION AND ITS METRIC.pdf
+INFORMATION THEORY AND AN EXTENSION OF THE MAXIMUM LIKELIHOOD PRINCIPLE.pdf
+Information_Theory_and_Statistics_A_Tutorial.pdf
+Insights on representational similarity in neural networks with canonical correlation——1806.05759.pdf
+Instance-sensitive Fully Convolutional Networks_1603.08678.pdf
+Interaction Networks for Learning about Objects, Relations and Physics.pdf
+Interactive Local Adjustment of Tonal Values.pdf
+Interpretable and Accurate Fine-grained Recognition via Region Grouping_2005.10411.pdf
+Interpretable Multimodal Retrieval for Fashion Products.pdf
+IntervalRank — Isotonic Regression with Listwise and Pairwise Constraints.pdf
+Invertible Residual Networks.pdf
+IoU-aware Single-stage Object Detector for Accurate Localization_1912.05992.pdf
+Iterative Quantization A Procrustean Approach to Learning Binary Codes.pdf
+It’s Not Just Size That Matters Small Language Models Are Also Few-Shot Learners_2009.07118.pdf
+Jamal_Rethinking_Class-Balanced_Methods_for_Long-Tailed_Visual_Recognition_From_a_Domain_CVPR_2020_paper.pdf
+Joint Bilateral Upsampling.pdf
+Joint Disentangling and Adaptation for Cross-Domain Person Re-Identification_2007.10315.pdf
+Joint Learning of Single-image and Cross-image Representations for Person Re-identification.pdf
+Joint Training of a Convolutional Network and a Graphical Model for Human Pose Estimation_1406.2984.pdf
+k-Means is a Variational EM Approximation of Gaussian Mixture Models_1704.04812v1.pdf
+Keep your Eyes on the Lane Real-time Attention-guided Lane Detection_2010.12035v2.pdf
+Keeping Neural Networks Simple by Minimizing the Description Length of the Weights.pdf
+Key Points Estimation and Point Instance Segmentation Approach for Lane Detection_2002.06604v4.pdf
+Keying Hash Functions for Message Authentication.pdf
+Kim_Multiple_Hypothesis_Tracking_ICCV_2015_paper.pdf
+Kirillov_Panoptic_Feature_Pyramid_Networks_CVPR_2019_paper.pdf
+Knapsack Pruning with Inner Distillation_2002.08258.pdf
+knuth_mathematical_writing.pdf
+Kucer_A_Detect-Then-Retrieve_Model_for_Multi-Domain_Fashion_Item_Retrieval_CVPRW_2019_paper.pdf
+KungFu Making Training in Distributed Machine Learning Adaptive.pdf
+L E A R N I N G S E Q U E N C E R E P R E S E N TAT I O N S.pdf
+L2-Net Deep Learning of Discriminative Patch Descriptor in Euclidean Space.pdf
+Label Efficient Learning of Transferable Representations across Domains and Tasks_1712.00123.pdf
+Laplacian Surface Editing.pdf
+Large Scale Distributed Deep Networks.pdf
+Large Scale Fine-Grained Categorization and Domain-Specific Transfer Learning.pdf
+Large Scale Structure of Neural Network Loss Landscapes_1906.04724v1.pdf
+Large-scale interactive object segmentation with human annotators_1903.10830.pdf
+Large-Scale Long-Tailed Recognition in an Open World_1904.05160.pdf
+Large-Scale Object Classification using Label Relation Graphs.pdf
+Latent Variable Modeling with Random Features_2006.11145.pdf
+lcis.pdf
+Learning Attentive Pairwise Interaction for Fine-Grained Classification_2002.10191v1.pdf
+Learning Deep Embeddings with Histogram Loss_1611.00822.pdf
+Learning Depth from Monocular Videos using Direct Methods.pdf
+Learning Eigenfunctions Links Spectral Embedding and Kernel PCA.pdf
+Learning Features by Watching Objects Move.pdf
+Learning feed-forward one-shot learners_1606.05233v1.pdf
+Learning from Noisy Labels with Deep Neural Networks A Survey_2007.08199.pdf
+Learning Generalisable Omni-Scale Representations for Person Re-Identification_1910.06827.pdf
+Learning Imbalanced Datasets with Label-Distribution-Aware Margin Loss_1906.07413.pdf
+Learning in Implicit Generative Models_1610.03483.pdf
+Learning Multi-Attention Convolutional Neural Network for Fine-Grained Image Recognition.pdf
+Learning Multi-Scale Photo Exposure Correction_2003.11596.pdf
+Learning Perceptual Causality from Video.pdf
+Learning Representations for Counterfactual Inference.pdf
+Learning Sparse High Dimensional Filters.pdf
+Learning Submodular Losses with the Lovász Hinge.pdf
+Learning to Compare Relation Network for Few-Shot Learning.pdf
+Learning to Correct Overexposed and Underexposed Photos_2003.11596v1.pdf
+Learning to Estimate 3D Hand Pose from Single RGB Images_1705.01389.pdf
+LEARNING TO EXECUTE_1410.4615.pdf
+Learning to Optimize Tensor Programs_1805.08166.pdf
+Learning to Parse Wireframes in Images of Man-Made Environments.pdf
+Learning to Predict from Crowdsourced Data.pdf
+LEARNING TO PROTECT COMMUNICATIONS WITH ADVERSARIAL NEURAL CRYPTOGRAPHY_1610.06918.pdf
+Learning to Reweight Examples for Robust Deep Learning_1803.09050.pdf
+Learning to See Physics via Visual De-animation.pdf
+Learning to Segment Every Thing_1711.10370.pdf
+Learning to update Auto-associative Memory in Recurrent Neural Networks for Improving Sequence Memorization_1709.06493.pdf
+Learning Transferable Architectures for Scalable Image Recognition.pdf
+Learning Transferable Architectures for Scalable Image Recognition_1707.07012.pdf
+Learning Visual Features from Large Weakly Supervised Data_1511.02251.pdf
+Learning_to_rank_for_information_retrieval_LR4IR_2.pdf
+Lee_Meta-Learning_With_Differentiable_Convex_Optimization_CVPR_2019_paper.pdf
+Leveraging Pre-trained Checkpoints for Sequence Generation Tasks_1907.12461.pdf
+Lie Groups for 2D and 3D Transformations.pdf
+Lifted Disjoint Paths with Application in Multiple Object Tracking_2006.14550.pdf
+Linear Convergence of Gradient and Proximal-Gradient Methods Under the Polyak- Lojasiewicz Condition_1608.04636.pdf
+Liu_Auto-DeepLab_Hierarchical_Neural_Architecture_Search_for_Semantic_Image_Segmentation_CVPR_2019_paper.pdf
+Liu_Deep_Fashion_Analysis_with_Feature_Map_Upsampling_and_Landmark-driven_Attention_ECCVW_2018_paper.pdf
+Liu_High-Level_Semantic_Feature_Detection_A_New_Perspective_for_Pedestrian_Detection_CVPR_2019_paper.pdf
+Li_Selective_Kernel_Networks_CVPR_2019_paper.pdf
+Local Laplacian Filters Edge-aware Image Processing with a Laplacian Pyramid.pdf
+Local Light Field Fusion_1905.00889.pdf
+Locally Smoothed Neural Networks_1711.08132.pdf
+Long-Tailed Classification by Keeping the Good and Removing the Bad Momentum Causal Effect_2009.12991.pdf
+Look into Person Joint Body Parsing & Pose Estimation Network and A New Benchmark_1804.01984.pdf
+Look into Person Self-supervised Structure-sensitive Learning and A New Benchmark for Human Parsing.pdf
+Look into Person Self-supervised Structure-sensitive Learning and A New Benchmark for Human Parsing_1703.05446.pdf
+Look-Closer-to-See-Better-Recurrent-Attention-Convolutional-Neural-Network-for-Fine-grained-Image-Recognition.pdf
+Loss Surfaces, Mode Connectivity, and Fast Ensembling of DNNs_1802.10026.pdf
+Lossy Image Compression with Normalizing Flows_2008.10486.pdf
+Low-shot learning with large-scale diffusion.pdf
+Low-shot Visual Recognition by Shrinking and Hallucinating Features.pdf
+LSTM A Search Space Odyssey_1503.04069.pdf
+Luo_Cross-X_Learning_for_Fine-Grained_Visual_Categorization_ICCV_2019_paper.pdf
+Making Classification Competitive for Deep Metric Learning_1811.12649v1.pdf
+Making Deep Neural Networks Robust to Label Noise a Loss Correction Approach_1609.03683.pdf
+MapReduce Simplified Data Processing on Large Clusters.pdf
+MapReduce.pdf
+Mask R-CNN_1703.06870.pdf
+MaskFlownet Asymmetric Feature Matching with Learnable Occlusion Mask_2003.10955.pdf
+Match-SRNN Modeling the Recursive Matching Structure with Spatial RNN_1604.04378.pdf
+Matching Networks for One Shot Learning_1606.04080.pdf
+Mathematical Reasoning in Latent Space_1909.11851.pdf
+Mathematics of Deep Learning_1712.04741.pdf
+Mathiness in the Theory of Economic Growth.pdf
+matrix_capsules_with_em_routing.pdf
+Mattyus_DeepRoadMapper_Extracting_Road_ICCV_2017_paper.pdf
+Ma_Learning_to_Dress_3D_People_in_Generative_Clothing_CVPR_2020_paper.pdf
+MCUNet Tiny Deep Learning on IoT Devices_2007.10319.pdf
+MEASURING THE INTRINSIC DIMENSION OF OBJECTIVE LANDSCAPES_1804.08838.pdf
+MEMORY NETWORKS_1410.3916.pdf
+Meta Networks_1703.00837.pdf
+Meta-Learning A Survey_1810.03548.pdf
+Meta-Learning in Neural Networks A Survey_2004.05439.pdf
+Meta-Learning with Memory-Augmented Neural Networks.pdf
+META-LEARNING WITHOUT MEMORIZATION_1912.03820.pdf
+Mid-Level Visual Representations Improve Generalization and Sample Efficiency for Learning Visuomotor Policies_1812.11971.pdf
+Mixed-Integer Models for Nonseparable Piecewise Linear Optimization Unifying Framework and Extensions.pdf
+mixup BEYOND EMPIRICAL RISK MINIMIZATION_1710.09412.pdf
+MLSys_1904.03257.pdf
+MNN A UNIVERSAL AND EFFICIENT INFERENCE ENGINE_2002.12418.pdf
+Mobile Computational Photography A Tour_2102.09000.pdf
+Model Cards for Model Reporting_1810.03993.pdf
+Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks_1703.03400.pdf
+Modeling How People Extract Color Themes from Images.pdf
+Modeling Relational Data with Graph Convolutional Networks_1703.06103.pdf
+Modeling, Inference and Optimization with Composable Differentiable Procedures.pdf
+Models Matter, So Does Training An Empirical Study of CNNs for Optical Flow Estimation_1809.05571v1.pdf
+Monte Carlo Gradient Estimation in Machine Learning_1906.10652.pdf
+Morphable Face Models - An Open Framework_1709.08398.pdf
+MOTS Multi-Object Tracking and Segmentation_1902.03604.pdf
+Multi-branch and Multi-scale Attention Learning for Fine-Grained Visual Categorization_2003.09150v3.pdf
+Multi-target Tracking by Lagrangian Relaxation to Min-Cost Network Flow.pdf
+Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics.pdf
+Multi-Task Transfer Methods to Improve One-Shot Learning for Multimedia Event Detection.pdf
+MultiGrain a unified image embedding for classes and instances_1902.05509.pdf
+Multiplying matrices in O(n) time.pdf
+Multiscale Shape and Detail Enhancement from Multi-light Image Collections.pdf
+Mustikovela_Self-Supervised_Viewpoint_Learning_From_Image_Collections_CVPR_2020_paper.pdf
+Natural Adversarial Examples_1907.07174.pdf
+Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions.pdf
+NeRF_2003.08934.pdf
+Network Dissection Quantifying Interpretability of Deep Visual Representations_1704.05796.pdf
+Neural 3D Morphable Models Spiral Convolutional Networks for 3D Shape Representation Learning and Generation.pdf
+NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT LEARNING_1611.01578.pdf
+Neural Architecture Transfer_2005.05859v1.pdf
+Neural Discrete Representation Learning_1711.00937.pdf
+Neural Information Retrieval At the End of the Early Years.pdf
+Neural networks and physical systems with emergent collective computational abilities.pdf
+Neural Symbolic Machines Learning Semantic Parsers on Freebase with Weak Supervision_1611.00020v3.pdf
+Neural Tangent Kernel.pdf
+NEURAL TANGENTS_1912.02803.pdf
+Neural Turing Machines_1410.5401.pdf
+NEURAL VOLUME RENDERING NERF AND BEYOND_2101.05204.pdf
+NeurIPS-2018-neural-ordinary-differential-equations-Paper.pdf
+NeurIPS-2019-generalized-sliced-wasserstein-distances-Paper.pdf
+NeurIPS-2019-residual-flows-for-invertible-generative-modeling-Paper.pdf
+NeurIPS-2020-batch-normalization-biases-residual-blocks-towards-the-identity-function-in-deep-networks-Paper.pdf
+NeurIPS-2020-is-normalization-indispensable-for-training-deep-neural-network-Paper.pdf
+Neven_Instance_Segmentation_by_Jointly_Optimizing_Spatial_Embeddings_and_Clustering_Bandwidth_CVPR_2019_paper.pdf
+NiLBS Neural Inverse Linear Blend Skinning_2004.05980.pdf
+NIPS-2001-the-infinite-hidden-markov-model-Paper.pdf
+NIPS-2013-approximate-bayesian-image-interpretation-using-generative-probabilistic-graphics-programs-Paper.pdf
+NIPS-2015-competitive-distribution-estimation-why-is-good-turing-good-Paper.pdf
+NIPS-2017-a-simple-neural-network-module-for-relational-reasoning-Paper.pdf
+NIPS-2017-a-unified-approach-to-interpreting-model-predictions-Paper.pdf
+NIPS-2017-associative-embedding-end-to-end-learning-for-joint-detection-and-grouping-Paper.pdf
+No Fuss Distance Metric Learning using Proxies_1703.07464.pdf
+Noise or Signal The Role of Image Backgrounds in Object Recognition_2006.09994.pdf
+Normalized Cuts and Image Segmentation.pdf
+Normalized Loss Functions for Deep Learning with Noisy Labels_2006.13554.pdf
+Normalizing Flows for Probabilistic Modeling and Inference_1912.02762.pdf
+Not All Pixels Are Equal Difficulty-Aware Semantic Segmentation via Deep Layer Cascade.pdf
+Notes on ergodic theory.pdf
+NVIDIA TESLA AUNIFIED GRAPHICS AND COMPUTING ARCHITECTURE.pdf
+On Calibration of Modern Neural Networks_1706.04599.pdf
+On First-Order Meta-Learning Algorithms_1803.02999.pdf
+On Hyperparameter Optimization of Machine Learning Algorithms_2007.15745.pdf
+On image denoising methods.pdf
+ON LARGE-BATCH TRAINING FOR DEEP LEARNING GENERALIZATION GAP AND SHARP MINIMA_1609.04836.pdf
+On Network Design Spaces for Visual Recognition_1905.13214.pdf
+On the Convergence Properties of Optimal AdaBoost_1212.1108.pdf
+On the Convergence Rate of Good-Turing Estimators.pdf
+On the difficulty of training Recurrent Neural Networks_1211.5063.pdf
+On the Doubt about Margin Explanation of Boosting.pdf
+On the Length of Programs for Computing Finite Binat T Sequences .pdf
+ON THE RELATIONSHIP BETWEEN SELF-ATTENTION AND CONVOLUTIONAL LAYERS_1911.03584.pdf
+ON THE VARIANCE OF THE ADAPTIVE LEARNING RATE AND BEYOND_1908.03265.pdf
+On variational lower bounds of mutual information.pdf
+One-Shot Imitation Learning_1703.07326.pdf
+One-Shot Learning of Scene Locations via Feature Trajectory Transfer.pdf
+onur-740-fall13-module5.2.1-dataflow-part1.pdf
+OpenArray v1.0 a simple operator library for the decoupling of ocean modeling and parallel computing.pdf
+OpenDR.pdf
+Opening the black box of Deep Neural Networks via Information_1703.00810.pdf
+OpenPose Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields_1812.08008.pdf
+optaplanner-docs.pdf
+Optical Models for Direct Volume Rendering.pdf
+OPTIMIZATION AS A MODEL FOR FEW-SHOT LEARNING.pdf
+Optimizing One-Shot Recognition with Micro-Set Learning.pdf
+ORDER MATTERS SEQUENCE TO SEQUENCE FOR SETS_1511.06391.pdf
+OUTRAGEOUSLY LARGE NEURAL NETWORKS THE SPARSELY-GATED MIXTURE-OF-EXPERTS LAYER_1701.06538.pdf
+PACT PARAMETERIZED CLIPPING ACTIVATION FOR QUANTIZED NEURAL NETWORKS_1805.06085.pdf
+Panoptic-DeepLab_1911.10194.pdf
+Part-Stacked CNN for Fine-Grained Visual Categorization.pdf
+Path Aggregation Network for Instance Segmentation_1803.01534.pdf
+Pattern inference theory A probabilistic approach to vision.pdf
+PAYING MORE ATTENTION TO ATTENTION_1612.03928.pdf
+PDENet.pdf
+Pedestrian Detection The Elephant In The Room_2003.08799.pdf
+Perceptual Losses for Real-Time Style Transfer and Super-Resolution.pdf
+Performance_Evaluation_in_Content-Based_Image_Retr.pdf
+PersonLab_1803.08225.pdf
+Personnel Scheduling Models and Complexity.pdf
+PFLD A Practical Facial Landmark Detector_1902.10859.pdf
+PinText A Multitask Text Embedding System in Pinterest.pdf
+Pixel-level Encoding and Depth Layering for Instance-level Semantic Labeling_1604.05096.pdf
+PLUG AND PLAY LANGUAGE MODELS A SIMPLE APPROACH TO CONTROLLED TEXT GENERATION_1912.02164.pdf
+PLuTo.pdf
+POG Personalized Outfit Generation for Fashion Recommendation at Alibaba iFashion_1905.01866v3.pdf
+Pointer Networks_1506.03134.pdf
+PolyLaneNet_2004.10924.pdf
+Polymorphic Delimited Continuations.pdf
+Population Based Augmentation.pdf
+Population Based Training of Neural Networks_1711.09846.pdf
+Pose Space Deformation A Unified Approach to Shape Interpolation and Skeleton-Driven Deformation.pdf
+Pose-Invariant 3D Face Alignment_1506.03799.pdf
+Pose-Invariant Face Alignment with a Single CNN.pdf
+Position-aware Attention and Supervised Data Improve Slot Filling.pdf
+PowerNorm Rethinking Batch Normalization in Transformers_2003.07845.pdf
+PP-OCR_2009.09941.pdf
+PP-YOLO_2007.12099.pdf
+Pre-Trained Image Processing Transformer_2012.00364v1.pdf
+Precise Detection in Densely Packed Scenes_1904.00853.pdf
+Predicting Depth, Surface Normals and Semantic Labels with a Common Multi-Scale Convolutional Architecture.pdf
+Predicting Good Probabilities With Supervised Learning.pdf
+Pretrained Transformers Improve Out-of-Distribution Robustness_2004.06100.pdf
+Probabilistic Programming with CuPPL_2010.08454.pdf
+Probability, Random Processes, and Ergodic Properties.pdf
+Product quantization for nearest neighbor search.pdf
+Project Adam Building an Efficient and Scalable Deep Learning Training System.pdf
+Properties and Applications of Shape Recipes.pdf
+Property of Average Precision and its Generalization.pdf
+Prototypical Networks for Few-shot Learning.pdf
+Proximal Policy Optimization Algorithms_1707.06347.pdf
+PRUNING FILTERS FOR EFFICIENT CONVNETS_1608.08710.pdf
+PUFFINN Parameterless and Universally Fast FInding of Nearest Neighbors_1906.12211.pdf
+Quadruplet-wise Image Similarity Learning.pdf
+Quantifying causal emergence shows that macro can beat micro.pdf
+Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference_1712.05877.pdf
+Quantized Neural Networks.pdf
+Quantizing deep convolutional networks for efficient inference A whitepaper_1806.08342.pdf
+Quantum Computing_2010.15559.pdf
+Quantum Kolmogorov Complexity Based on Classical Descriptions.pdf
+Query-Level Learning to Rank Using Isotonic Regression.pdf
+R2D2 Repeatable and Reliable Detector and Descriptor_1906.06195.pdf
+Rademacher and Gaussian Complexities Risk Bounds and Structural Results.pdf
+Radosavovic_Designing_Network_Design_Spaces_CVPR_2020_paper.pdf
+RAFT Recurrent All-Pairs Field Transforms for Optical Flow.pdf
+RAISR Rapid and Accurate Image Super Resolution_1606.01299.pdf
+RandAugment Practical automated data augmentation with a reduced search space_1909.13719.pdf
+Random Erasing Data Augmentation_1708.04896.pdf
+Random Search for Hyper-Parameter Optimization.pdf
+Ranking_on_Data_Manifolds.pdf
+RayTracingVolumeDensities.pdf
+RDMA vs. RPC for Implementing Distributed Data Structures_1910.02158.pdf
+Real Patterns.pdf
+Real-time Edge-Aware Image Processing with the Bilateral Grid.pdf
+Real-time Facial Surface Geometry from Monocular Video on Mobile GPUs_1907.06724.pdf
+Real-time Hand Gesture Detection and Classification Using Convolutional Neural Networks_1901.10323.pdf
+Real-Time O(1) Bilateral Filtering.pdf
+Real-time Scene Text Detection with Differentiable Binarization_1911.08947.pdf
+Really Embedding Domain-Specific Languages into C++_2010.08439.pdf
+Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields_1611.08050.pdf
+Recapture as You Want_2006.01435.pdf
+Reconciling Modern Deep Learning with Traditional Optimization Analyses The Intrinsic Learning Rate_2010.02916.pdf
+Reconciling modern machine learning practice and the bias-variance trade-of_1812.11118.pdf
+RECURRENT INDEPENDENT MECHANISMS_1909.10893.pdf
+Recurrent Pixel Embedding for Instance Grouping.pdf
+Recursively generated B-spline surfaces on arbitrary topological meshes.pdf
+Regular languages, derivatives and finite automata_1907.13577.pdf
+Regularized Evolution for Image Classifier Architecture Search_1802.01548.pdf
+REGULARIZING NEURAL NETWORKS BY PENALIZING CONFIDENT OUTPUT DISTRIBUTIONS_1701.06548.pdf
+REINTERPRETING IMPORTANCE-WEIGHTED AUTOENCODERS_1704.02916.pdf
+Representation Learning with Contrastive Predictive Coding_1807.03748.pdf
+RESA Recurrent Feature-Shift Aggregator for Lane Detection_2008.13719.pdf
+Rethinking Few-Shot Image Classification a Good Embedding Is All You Need_2003.11539.pdf
+Rethinking ImageNet Pre-training_1811.08883.pdf
+Rethinking on Multi-Stage Networks for Human Pose Estimation_1901.00148v4.pdf
+Rethinking Pre-training and Self-training_2006.06882v1.pdf
+Revisiting complexity and the bias-variance tradeoff_2006.10189.pdf
+REVISITING DISTRIBUTED SYNCHRONOUS SGD_1604.00981.pdf
+Revisiting Unreasonable Effectiveness of Data in Deep Learning Era_1707.02968.pdf
+RFP When RPC is Faster than Server-Bypass with RDMA.pdf
+Robust Binary Feature using the Intensity Order.pdf
+Robust Estimation via Robust Gradient Estimation_1802.06485v1.pdf
+Robust Kernel Density Estimation_1107.3133.pdf
+Robust Loss Functions under Label Noise for Deep Neural Networks_1712.09482.pdf
+ROBUST MONTE CARLO METHODS FOR LIGHT TRANSPORT SIMULATION.pdf
+Robustness and Generalization_1005.2243.pdf
+Saito_PIFu_Pixel-Aligned_Implicit_Function_for_High-Resolution_Clothed_Human_Digitization_ICCV_2019_paper.pdf
+Salient Object Detection A Benchmark.pdf
+Sample-Efficient Neural Architecture Search by Learning Actions for Monte Carlo Tree Search.pdf
+Sampling Matters in Deep Embedding Learning_1706.07567.pdf
+Samuel_Albanie_Semi-convolutional_Operators_for_ECCV_2018_paper.pdf
+SCALABLE TRAINING OF DEEP LEARNING MACHINES BY INCREMENTAL BLOCK TRAINING WITH INTRA-BLOCK PARALLEL OPTIMIZATION AND BLOCKWISE MODEL-UPDATE FILTERING.pdf
+Scaling Distributed Machine Learning with the Parameter Server.pdf
+Seeing through the Human Reporting Bias Visual Classifiers from Noisy Human-Centric Labels.pdf
+Self-Attention with Relative Position Representations_1803.02155.pdf
+Self-training with Noisy Student improves ImageNet classification_1911.04252.pdf
+Self6D Self-Supervised Monocular 6D Object Pose Estimation_2004.06468.pdf
+SELFIE Refurbishing Unclean Samples for Robust Deep Learning.pdf
+Semantic Instance Segmentation via Deep Metric Learning_1703.10277.pdf
+Semantic Jitter Dense Supervision for Visual Comparisons via Synthetic Images.pdf
+SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKS_1609.02907.pdf
+Semi-Supervised Learning with Ladder Networks_1507.02672.pdf
+SeqGAN Sequence Generative Adversarial Nets with Policy Gradient_1609.05473v6.pdf
+SGDR STOCHASTIC GRADIENT DESCENT WITH WARM RESTARTS_1608.03983.pdf
+Shake-Shake regularization_1705.07485.pdf
+Shannon Information and Kolmogorov Complexity.pdf
+ShapeMask Learning to Segment Novel Objects by Refining Shape Priors_1904.03239.pdf
+Sharpness-Aware Minimization for Efficiently Improving Generalization_2010.01412v1.pdf
+Shen_End-to-End_Deep_Kronecker-Product_CVPR_2018_paper.pdf
+Shop The Look Building a Large Scale Visual Shopping System at Pinterest.pdf
+Shysheya_Textured_Neural_Avatars_CVPR_2019_paper.pdf
+SIFTing through Scales.pdf
+Similarity of Neural Network Representations Revisited.pdf
+Simple Baselines for Human Pose Estimation and Tracking_1804.06208v2.pdf
+SIMPLE ONLINE AND REALTIME TRACKING WITH A DEEP ASSOCIATION METRIC_1703.07402.pdf
+Single Image Haze Removal Using Dark Channel Prior.pdf
+Smooth Skinning Decomposition with Rigid Bones.pdf
+SMPL-X.pdf
+SOLOv2 Dynamic, Faster and Stronger_2003.10152v1.pdf
+Some PAC-Bayesian Theorems.pdf
+Some Theory for Generalized Boosting Algorithms.pdf
+Sparse GPU Kernels for Deep Learning.pdf
+Spatial As Deep Spatial CNN for Traffic Scene Understanding_1712.06080v1.pdf
+SpatialSense An Adversarially Crowdsourced Benchmark for Spatial Relation Recognition_1908.02660.pdf
+Spherical Blend Skinning A Real-time Deformation of Articulated Models.pdf
+SpineNet Learning Scale-Permuted Backbone for Recognition and Localization_1912.05027v3.pdf
+Squeeze-and-Excitation Networks_1709.01507.pdf
+Stability and Generalization of Graph Convolutional Neural Networks_1905.01004.pdf
+Stability and Generalization.pdf
+Stand-Alone Self-Attention in Vision Models_1906.05909.pdf
+Stanford typed dependencies manual.pdf
+STAR Sparse Trained Articulated Human Body Regressor.pdf
+State of the Art on Neural Rendering.pdf
+Stochastic modified equations and adaptive stochastic gradient algorithms_1511.06251.pdf
+Stochastic Modified Equations and Dynamics of Stochastic Gradient Algorithms I Mathematical Foundations_1811.01558.pdf
+String Searching over Small Alphabets.pdf
+Stronger generalization bounds for deep nets via a compression approach_1802.05296.pdf
+Structured Learning and Prediction in Computer Vision.pdf
+Stupid Spherical Harmonics (SH) Tricks.pdf
+Super-Convergence Very Fast Training of Neural Networks Using Large Learning Rates_1708.07120.pdf
+Supervised Sequence Labelling with Recurrent Neural Networks.pdf
+Support Vector Machines Under Adversarial Label Noise.pdf
+SVCCA Singular Vector Canonical Correlation Analysis for Deep Learning Dynamics and Interpretability_1706.05806.pdf
+Taichi A Language for High-Performance Computation on Spatially Sparse Data Structures.pdf
+Tensor2Tensor for Neural Machine Translation_1803.07416.pdf
+TensorFlow A system for large-scale machine learning.pdf
+TensorFlow Estimators_1708.02637.pdf
+TensorFlow Large-Scale Machine Learning on Heterogeneous Distributed Systems_1603.04467.pdf
+The Calculi of Emergence Computation, Dynamics, and Induction.pdf
+The Case for Learned Index Structures_1712.01208.pdf
+The Description Length of Deep Learning Models_1802.07044.pdf
+The discovery of structural form.pdf
+The Essence of Compiling with Continuations.pdf
+The Fastest and Shortest Algorithm for All Well-Defined Problems.pdf
+The Graph Neural Network Model.pdf
+The Hardware Lottery_2009.06489v1.pdf
+The Helmholtz Machine.pdf
+The History of Standard ML.pdf
+The intriguing role of module criticality in the generalization of deep networks_1912.00528.pdf
+The Ising model and Markov chain Monte Carlo.pdf
+The Knowledge Within Methods for Data-Free Model Compression_1912.01274.pdf
+The Late Acceptance Hill-Climbing Heuristic.pdf
+THE LOSS LANDSCAPE OF OVERPARAMETERIZED NEURAL NETWORKS_1804.10200v1.pdf
+The Loss Surfaces of Multilayer Networks_1412.0233.pdf
+THE LOTTERY TICKET HYPOTHESIS_1803.03635.pdf
+The Part-Of-Speech Tagging Guidelines for the Penn Chinese Treebank.pdf
+The Principles and Practice of Probabilistic Programming.pdf
+THE RELATIVISTIC DISCRIMINATOR A KEY ELEMENT MISSING FROM STANDARD GAN.pdf
+The Revised Report on the Syntactic Theories of Sequential Control and State.pdf
+The Seven Tools of Causal Inference with Reflections on Machine Learning.pdf
+The State of Sparsity in Deep Neural Networks_1902.09574.pdf
+The Trade-Offs of Private Prediction_2007.05089.pdf
+The Unreasonable Effectiveness of Deep Features as a Perceptual Metric.pdf
+The Yin and Yang of Processing Data Warehousing Queries on GPU Devices.pdf
+Theano A Python framework for fast computation of mathematical expressions_1605.02688.pdf
+Theory of cortical function.pdf
+Theory of Ergodic Quantum Processes_2004.14397.pdf
+the_singular_values_of_convolutional_layers.pdf
+Tier-based Strictly Local Constraints for Phonology.pdf
+Tighter Variational Bounds are Not Necessarily Better_1802.04537.pdf
+To Understand Deep Learning We Need to Understand Kernel Learning_1802.01396.pdf
+Total Capture A 3D Deformation Model for Tracking Faces, Hands, and Bodies.pdf
+Toward a theory of optimization for over-parameterized systems of non-linear equations the lessons of deep learning_2003.00307.pdf
+Toward Explainable Fashion Recommendation_1901.04870v1.pdf
+Toward Robustness against Label Noise in Training Deep Discriminative Neural Networks.pdf
+Towards a mathematical theory of trajectory inference_2102.09204.pdf
+Towards Accurate Multi-person Pose Estimation in the Wild_1701.01779.pdf
+Towards Causal Representation Learning_2102.11107.pdf
+Towards Deep Neural Network Architectures Robust to Adversarial Examples_1412.5068v1.pdf
+Towards Lightweight Lane Detection by Optimizing Spatial Embedding_2008.08311v2.pdf
+TOWARDS PRINCIPLED METHODS FOR TRAINING GENERATIVE ADVERSARIAL NETWORKS_1701.04862v1.pdf
+Towards Real-Time Multi-Object Tracking_1909.12605.pdf
+Towards Segmenting Anything That Moves_1902.03715.pdf
+Training Deep Nets with Sublinear Memory Cost_1604.06174.pdf
+TRAINING DEEP NEURAL NETWORKS ON NOISY LABELS WITH BOOTSTRAPPING.pdf
+Training with Noise is Equivalent to Tikhonov Regularization.pdf
+Training-Time-Friendly Network for Real-Time Object Detection_1909.00700.pdf
+Transformer-XL Attentive Language Models Beyond a Fixed-Length Context_1901.02860.pdf
+TResNet High Performance GPU-Dedicated Architecture_2003.13630v3.pdf
+Troubling Trends in Machine Learning Scholarship_1807.03341.pdf
+Tutorial on Variational Autoencoders_1606.05908.pdf
+TVM.pdf
+Two-scale Tone Management for Photographic Look.pdf
+uday-polyhedral-opt.pdf
+Ultra Fast Structure-aware Deep Lane Detection_2004.11757.pdf
+UMAP Uniform Manifold Approximation and Projection for Dimension Reduction_1802.03426.pdf
+UnFlow Unsupervised Learning of Optical Flow with a Bidirectional Census Loss_1711.07837.pdf
+UNIFORM CONVERGENCE OF RANDOM FORESTS VIA ADAPTIVE CONCENTRATION_1503.06388v1.pdf
+Unifying Deep Local and Global Features for Image Search_2001.05027.pdf
+Universal Statistics of Fisher Information in Deep Neural Networks Mean Field Approach.pdf
+Unreproducible Research is Reproducible.pdf
+Unsupervised Deep Embedding for Clustering Analysis_1511.06335.pdf
+Unsupervised Deep Metric Learning via Auxiliary Rotation Loss_1911.07072.pdf
+Unsupervised Domain Adaptation by Backpropagation_1409.7495.pdf
+Unsupervised Embedding Learning via Invariant and Spreading Instance Feature_1904.03436.pdf
+Unsupervised Learning of Depth and Ego-Motion from Video.pdf
+Unsupervised Learning of Visual Features by Contrasting Cluster Assignments_2006.09882.pdf
+Unsupervised Object Discovery and Localization in the Wild Part-based Matching with Bottom-up Region Proposals.pdf
+Unsupervised Pre-training for Natural Language Generation A Literature Review_1911.06171.pdf
+User-Assisted Intrinsic Images.pdf
+Using Causal Induction in Humans to Learn and Infer Causality from Video.pdf
+Using Markov Blankets for Causal Structure Learning.pdf
+Variational Inference with Normalizing Flows_1505.05770.pdf
+View-Invariant Probabilistic Embedding for Human Pose_1912.01001.pdf
+Visual Causal Feature Learning_1412.2309.pdf
+Visual Interpretability for Deep Learning a Survey_1802.00614.pdf
+Visual Tracking with Online Multiple Instance Learning.pdf
+Voodoo - A Vector Algebra for Portable Database Performance on Modern Hardware.pdf
+VQA Visual Question Answering_1505.00468.pdf
+Wang_Symmetric_Cross_Entropy_for_Robust_Learning_With_Noisy_Labels_ICCV_2019_paper.pdf
+Wasserstein Barycenter and its Application to Texture Mixing.pdf
+Wasserstein GAN_1701.07875.pdf
+What Do Neural Networks Learn When Trained With Random Labels_2006.10455.pdf
+What Do Recurrent Neural Network Grammars Learn About Syntax_1611.05774.pdf
+What is being transferred in transfer learning_2008.11687.pdf
+What is the Space of Camera Response Functions.pdf
+When Does Label Smoothing Help_1906.02629.pdf
+Why Random Reshuffling Beats Stochastic Gradient Descent_1510.08560.pdf
+why_gradient_clipping_accelerates_training_a_theoretical_justification_for_adaptivity.pdf
+Windows Assembly Programming Tutorial .pdf
+wss03-dally.pdf
+Xiong_Fine-Grained_Image-to-Image_Transformation_Towards_Visual_Recognition_CVPR_2020_paper.pdf
+Xue_Learning_Attraction_Field_Representation_for_Robust_Line_Segment_Detection_CVPR_2019_paper.pdf
+Yantao_Shen_Person_Re-identification_with_ECCV_2018_paper.pdf
+Yet Another Accelerated SGD_1903.12650.pdf
+Yun_CutMix_Regularization_Strategy_to_Train_Strong_Classifiers_With_Localizable_Features_ICCV_2019_paper.pdf
+Yu_Deep_Metric_Learning_With_Tuplet_Margin_Loss_ICCV_2019_paper.pdf
+Zemlyanikin_512KiB_RAM_Is_Enough_Live_Camera_Face_Recognition_DNN_on_ICCVW_2019_paper.pdf
+Zero-Reference Deep Curve Estimation for Low-Light Image Enhancement_2001.06826v2.pdf
+ZeroQ A Novel Zero Shot Quantization Framework_2001.00281.pdf
+Zhao_Memory-Augmented_Attribute_Manipulation_CVPR_2017_paper.pdf
+Zheng_Joint_Discriminative_and_Generative_Learning_for_Person_Re-Identification_CVPR_2019_paper.pdf
+Zhou_BBN_Bilateral-Branch_Network_With_Cumulative_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2020_paper.pdf
+Zhou_Look-Into-Object_Self-Supervised_Structure_Modeling_for_Object_Recognition_CVPR_2020_paper.pdf
+Zhuang_Local_Aggregation_for_Unsupervised_Learning_of_Visual_Embeddings_ICCV_2019_paper.pdf
+DeepHuman 3D Human Reconstruction From a Single Image.pdf
+Home 3D Body Scans from Noisy Image and Range Data.pdf
+Keep it SMPL Automatic Estimation of 3D Human Pose and Shape from a Single Image.pdf
+Learning 3D Human Pose from Structure and Motion.pdf
+Learning to Reconstruct 3D Human Pose and Shape via Model-fitting in the Loop_1909.12828.pdf
+Multi-Garment Net Learning to Dress 3D People from Images_1908.06903.pdf
+Novel-View Human Action Synthesis_2007.02808.pdf
+Resolving 3D Human Pose Ambiguities with 3D Scene Constraints.pdf
+SCAPE Shape Completion and Animation of People.pdf
+SMPL2015_fixed.pdf
+Accelerating Large-Scale Inference with Anisotropic Vector Quantization_1908.10396.pdf
+An Investigation of Practical Approximate Nearest Neighbor Algorithms.pdf
+ANN-Benchmarks A Benchmarking Tool for Approximate Nearest Neighbor Algorithms_1807.05614.pdf
+Approximate nearest neighbor algorithm based on navigable (Information Systems).pdf
+Approximate Nearest Neighbor Search on High Dimensional Data — Experiments, Analyses, and Improvement.pdf
+Approximate similarity search A multi-faceted problem.pdf
+Billion-scale similarity search with GPUs_1702.08734.pdf
+EFANNA An Extremely Fast Approximate Nearest Neighbor Search Algorithm Based on kNN Graph_1609.07228.pdf
+Effective Proximity Retrieval by Ordering Permutations.pdf
+Efficient and robust approximate nearest neighbor search using Hierarchical Navigable Small World graphs_1603.09320.pdf
+Efficient K-Nearest Neighbor Graph Construction for Generic Similarity Measures.pdf
+Efficient Large-scale Approximate Nearest Neighbor Search on the GPU_1702.05911.pdf
+FANNG Fast Approximate Nearest Neighbour Graphs.pdf
+Fast Approximate Nearest Neighbor Search With The Navigating Spreading-out Graph_1707.00143.pdf
+FAST APPROXIMATE NEAREST NEIGHBORS WITH AUTOMATIC ALGORITHM CONFIGURATION.pdf
+Fast Approximate Nearest-Neighbor Search with k-Nearest Neighbor Graph.pdf
+Fast Spectral Ranking for Similarity Search_1703.06935.pdf
+FeedbackBypass A New Approach to Interactive Similarity Query Processing.pdf
+From Small-World Networks to Comparison-Based Search_1107.3059.pdf
+Graph based Nearest Neighbor Search Promises and Failures_1904.02077.pdf
+Graph-based Nearest Neighbor Search From Practice to Theory_1907.00845.pdf
+Hashing for Similarity Search A Survey_1408.2927.pdf
+Hybrid LSH Faster Near Neighbors Reporting in High-dimensional Space.pdf
+Optimization of Indexing Based on k-Nearest Neighbor Graph for Proximity Search in High-dimensional Data_1810.07355.pdf
+Parameter-free Locality Sensitive Hashing for Spherical Range Reporting.pdf
+Searching in metric spaces by spatial approximation.pdf
+Shape Indexing Using Approximate Nearest-Neighbour Search in High-Dimensional Spaces.pdf
+Small-World Phenomena and the Dynamics of Information.pdf
+Speeding Up the Xbox Recommender System Using a Euclidean Transformation for Inner-Product Spaces.pdf
+SPREADING VECTORS FOR SIMILARITY SEARCH_1806.03198.pdf
+SRS Solving c-Approximate Nearest Neighbor Queries in High Dimensional Euclidean Space with a Tiny Index.pdf
+Succinct Nearest Neighbor Search.pdf
+The Small-World Phenomenon An Algorithmic Perspective.pdf
+Watts-Collective Dynamics Of Small World Networks.pdf
+Attentive Fashion Grammar Network for Fashion Landmark Detection and Clothing Category Classification.pdf
+Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba_1803.02349.pdf
+Convolutional Neural Networks for Fashion Classification and Object Detection.pdf
+Deep Fashion3D A Dataset and Benchmark for 3D Garment Reconstruction from Single Images_2003.12753.pdf
+Deep Learning based Large Scale Visual Recommendation and Search for E-Commerce_1703.02344.pdf
+DeepFashion Powering Robust Clothes Recognition and Retrieval with Rich Annotations.pdf
+DeepFashion2_1901.07973.pdf
+DeepGarment 3D Garment Shape Estimation from a Single Image.pdf
+Dressing as a Whole_1902.08009.pdf
+Fashion IQ A New Dataset towards Retrieving Images by Natural Language Feedback_1905.12794.pdf
+Fashion Landmark Detection in the Wild_1608.03049.pdf
+Fashion++ Minimal Edits for Outfit Improvement_1904.09261.pdf
+Fashion-Gen The Generative Fashion Dataset and Challenge_1806.08317v2.pdf
+FashionBERT Text and Image Matching with Adaptive Loss for Cross-modal Retrieval_2005.09801.pdf
+Fashionpedia Ontology, Segmentation, and an Attribute Localization Dataset_2004.12276.pdf
+GeoStyle_ Discovering Fashion Trends and Events.pdf
+Hi, Magic Closet, Tell Me What to Wear.pdf
+Learning a Unified Embedding for Visual Search at Pinterest_1908.01707.pdf
+Learning Visual Clothing Style with Heterogeneous Dyadic Co-occurrences_1509.07473.pdf
+Learning-Based Animation of Clothing for Virtual Try-On.pdf
+Mining Fashion Outfit Composition Using An End-to-End Deep Learning Approach on Set Data_1608.03016.pdf
+MMfashion_2005.08847.pdf
+Paper Doll Parsing Retrieving Similar Styles to Parse Clothing Items.pdf
+Parsing Clothing in Fashion Photographs.pdf
+SieveNet A Unified Framework for Robust Image-Based Virtual Try-On_2001.06265.pdf
+Street-to-shop Cross-scenario clothing retrieval via parts alignment and auxiliary set.pdf
+The iMaterialist Fashion Attribute Dataset.pdf
+Where to Buy It Matching Street Clothing Photos in Online Shops.pdf
+Zou_FashionAI_A_Hierarchical_Dataset_for_Fashion_Understanding_CVPRW_2019_paper.pdf
+A compact formula for the derivative of a 3-D rotation in exponential coordinates_1312.0788v1.pdf
+A course in Time Series Analysis.pdf
+A micro Lie theory for state estimation in robotics_1812.01537.pdf
+A Tutorial on Fisher Information_1705.01064.pdf
+A tutorial on SE(3) transformation parameterizations and on-manifold optimization.pdf
+Algorithms.pdf
+Automatic Model Construction with Gaussian Processes.pdf
+book-rev11.pdf
+Computational Optimal Transport_1803.00567.pdf
+CUDA_C_Programming_Guide (1).pdf
+CUDA_C_Programming_Guide.pdf
+Gaussian Processes for Machine Learning.pdf
+Introduction to Computer Graphics.pdf
+L3797 Fundamentals of Computer Graphics, 4th.pdf
+Lecture Notes for Statistics 311_Electrical Engineering 377_full_notes.pdf
+Linear Programming Algorithms.pdf
+Linear Programming.pdf
+Pattern Recognition and Machine Learning.pdf
+pcasm-book.pdf
+Practical Python AI Projects.pdf
+Principles of Digital Image Synthesis.pdf
+Random Walk and the Heat Equation.pdf
+The Elements of Statistical Learning - Data Mining, Inference and Prediction - 2nd Edition (ESLII_print4).pdf
+Toeplitz and Circulant Matrices A review.pdf
+VP8 Data Format and Decoding Guide.pdf
+《机器学习实战：基于Scikit-Learn、Keras和TensorFlow》第二版.pdf
+A Review on Generative Adversarial Networks_2001.06937.pdf
+ALICE Towards Understanding Adversarial Learning for Joint Distribution Matching_1709.01215.pdf
+Cycle-Consistent Adversarial Learning as Approximate Bayesian Inference_1806.01771.pdf
+Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks_1506.05751.pdf
+f-GAN Training Generative Neural Samplers using Variational Divergence Minimization.pdf
+Generalized Denoising Auto-Encoders as Generative_1305.6663.pdf
+Generative Adversarial Networks A Survey and Taxonomy_1906.01529v1.pdf
+Generative Adversarial Networks are Special Cases of Artificial Curiosity (1990) and also Closely Related to Predictability Minimization (1991)_1906.04493.pdf
+Generative Moment Matching Networks_1502.02761.pdf
+Minimax policies for adversarial and stochastic bandits.pdf
+NIPS 2016 Tutorial Generative Adversarial Networks_1701.00160.pdf
+ON DISTINGUISHABILITY CRITERIA FOR ESTIMATING GENERATIVE MODELS_1412.6515.pdf
+Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network_1609.04802.pdf
+Stochastic Backpropagation and Approximate Inference in Deep Generative Models_1401.4082.pdf
+Synthesizing the preferred inputs for neurons in neural networks via deep generator networks_1605.09304.pdf
+Training generative neural networks via Maximum Mean Discrepancy optimization_1505.03906.pdf
+Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks_1703.10593.pdf
+A Learning Framework for Nearest Neighbor Search.pdf
+Complementary Hashing for Approximate Nearest Neighbor Search.pdf
+Compressed Hashing.pdf
+Deep Hashing for Compact Binary Codes Learning.pdf
+Fast Search in Hamming Space with Multi-Index Hashing.pdf
+Fast Similarity Search for Learned Metrics.pdf
+Hashing with Graphs.pdf
+HOW SHOULD WE EVALUATE SUPERVISED HASHING_1609.06753.pdf
+K-means Hashing.pdf
+Learning Task-Specific Similarity.pdf
+Learning to Hash for Indexing Big Data - A Survey_1509.05472.pdf
+LSH Forest Self-Tuning Indexes for Similarity Search.pdf
+QUERY-ADAPTATIVE LOCALITY SENSITIVE HASHING.pdf
+Semi-Supervised_Hashing_for_Large-Scale_Search.pdf
+spectral hashing.pdf
+Supervised Hashing with Kernels.pdf
+Foreground-aware Image Inpainting.pdf
+Free-Form Image Inpainting with Gated Convolution.pdf
+Generative Image Inpainting with Contextual Attention_1801.07892.pdf
+Globally and Locally Consistent Image Completion.pdf
+Image Inpainting for Irregular Holes Using Partial Convolutions.pdf
+A Framework for Generic State Estimation in Computer Vision Applications.pdf
+A Morphable Model For The Synthesis Of 3D Faces.pdf
+A New Approach to Probabilistic Programming Inference.pdf
+A Survey of Inverse Rendering Problems.pdf
+Dramatic Improvements to Feature Based Stereo.pdf
+Estimation algorithms for ambiguous visual models Three Dimensional Human Modeling and Motion Reconstruction in Monocular Video Sequences.pdf
+Model-Based Hand Tracking with Texture, Shading and Self-occlusions.pdf
+Monte Carlo Ray Tracing.pdf
+Neural scene representation and rendering.pdf
+Reconstructing 3D geometry from multiple images via inverse rendering.pdf
+Spherical Harmonic Lighting - the gritty details.pdf
+State of the Art in Monte Carlo Ray Tracing for Realistic Image Synthesis.pdf
+A Benchmark on Tricks for Large-scale Image Retrieval_1907.11854.pdf
+A Modulation Module for Multi-task Learning with Applications in Image Retrieval_1807.06708.pdf
+Aggregating Deep Convolutional Features for Image Retrieval_1510.07493.pdf
+Beyond Part Models Person Retrieval with Refined Part Pooling.pdf
+CNN Image Retrieval Learns from BoW Unsupervised Fine-Tuning with Hard Examples_1604.02426.pdf
+Conditional Similarity Networks_1603.07810.pdf
+Content-Based Image Retrieval at the End of the Early Years.pdf
+Cross-dimensional Weighting for Aggregated Deep Convolutional Features_1512.04065v2.pdf
+DeCAF A Deep Convolutional Activation Feature for Generic Visual Recognition.pdf
+Deep Image Retrieval Learning global representations for image search_1604.01325.pdf
+Deep learning for content-based image retrieval_ A comprehensive.pdf
+Deep Metric Learning via Lifted Structured Feature Embedding_1511.06452v1.pdf
+Detecting Objects in Large Image Collections and Videos by Efficient Subimage Retrieval.pdf
+Diffusion Processes for Retrieval Revisited.pdf
+Effects of Feature Normalization on Image Retrieval.pdf
+Efficient Match Kernels between Sets of Features for Visual Recognition.pdf
+Efficient Maximum Appearance Search for Large-Scale Object Detection.pdf
+End-to-end Learning of Deep Visual Representations for Image Retrieval_1610.07940.pdf
+End-to-End Supervised Product Quantization for Image Search and Retrieval_1711.08589.pdf
+FAST AND ROBUST SPATIAL MATCHING FOR OBJECT RETRIEVAL.pdf
+Fine-tuning CNN Image Retrieval with No Human Annotation_1711.02512.pdf
+Fisher and VLAD with FLAIR.pdf
+From Generic to Specific Deep Representations for Visual Recognition_1406.5774v1.pdf
+GrokNet Unified Computer Vision Model Trunk and Embeddings For Commerce.pdf
+Guided Similarity Separation for Image Retrieval.pdf
+Hello_Neighbor_Accurate_Object_Retrieval_with_k-Re.pdf
+Improving Descriptors for Fast Tree Matching by Optimal Linear Projection.pdf
+Integral Channel Features.pdf
+Iterative Manifold Embedding Layer Learned by Incomplete Data for Large-scale Image Retrieval_1707.09862.pdf
+Large-Scale Image Retrieval with Attentive Deep Local Features_1612.06321.pdf
+Learning with Average Precision Training Image Retrieval with a Listwise Loss_1906.07589v1.pdf
+Locally Constrained Diffusion Process on Locally Densified Distance Spaces with Applications to Shape Retrieval.pdf
+MSURU-Large-Scale-E-commerce-Image-Classification-With-Weakly-Supervised-Search-Data.pdf
+Multi-Scale Orderless Pooling of Deep Convolutional Activation Features_1403.1840.pdf
+On the burstiness of visual elements.pdf
+PARTICULAR OBJECT RETRIEVAL WITH INTEGRAL MAX-POOLING OF CNN ACTIVATIONS_1511.05879.pdf
+PyRetri A PyTorch-based Library for Unsupervised Image Retrieval by Deep Convolutional Neural Networks_2005.02154.pdf
+Regularized Diffusion Process for Visual Retrieval.pdf
+Revisiting Training Strategies and Generalization Performance in Deep Metric Learning.pdf
+Selective Convolutional Descriptor Aggregation for Fine-Grained Image Retrieval_1604.04994.pdf
+Selective Search for Object Recognition.pdf
+SOLAR Second-Order Loss and Attention for Image Retrieval_2001.08972v2.pdf
+spreading_vectors_for_similarity_search.pdf
+SUBIC A supervised, structured binary code for image search.pdf
+ToliasAvrithisJegou_IJCV2015_Image search with selective match kernels - aggregation across single and multiple images.pdf
+Total Recall Automatic Query Expansion with a Generative Feature Model for Object Retrieval.pdf
+Triangulation embedding and democratic aggregation for image search.pdf
+Trinary-Projection Trees for Approximate Nearest Neighbor Search.pdf
+Unsupervised Part-based Weighting Aggregation of Deep Convolutional Features for Image Retrieval_1705.01247.pdf
+Visual Discovery at Pinterest_1702.04680.pdf
+Visual query expansion with or without geometry refining local descriptors by feature aggregation.pdf
+Web-Scale Responsive Visual Search at Bing_1802.04914.pdf
+A Metric Learning Reality Check_2003.08505.pdf
+Critically Examining the “Neural Hype” Weak Baselines and the Additivity of Effectiveness Gains from Neural Ranking Models_1904.09171.pdf
+Momentum Contrast for Unsupervised Visual Representation Learning_1911.05722.pdf
+NormFace_1704.06369.pdf
+ProxyNCA++.pdf
+Qian_SoftTriple_Loss_Deep_Metric_Learning_Without_Triplet_Sampling_ICCV_2019_paper.pdf
+Revisiting Training Strategies and Generalization Performance in Deep Metric Learning_2002.08473v7.pdf
+Sampling Matters in Deep Embedding Learning_1706.07567.pdf
+Wang_Multi-Similarity_Loss_With_General_Pair_Weighting_for_Deep_Metric_Learning_CVPR_2019_paper.pdf
+A Decomposable Attention Model for Natural Language Inference.pdf
+A Deep Architecture for Semantic Matching with Multiple Positional Sentence Representations_1511.08277.pdf
+A DEEP REINFORCED MODEL FOR ABSTRACTIVE SUMMARIZATION_1705.04304.pdf
+A Deep Relevance Matching Model for Ad-hoc Retrieval.pdf
+A Diversity-Promoting Objective Function for Neural Conversation Models_1510.03055.pdf
+A Joint Many-Task Model Growing a Neural Network for Multiple NLP Tasks_1611.01587.pdf
+A Scalable Hierarchical Distributed Language Model.pdf
+A Simple Method for Commonsense Reasoning_1806.02847.pdf
+Adversarial Learning for Neural Dialogue Generation.pdf
+Adversarial Ranking for Language Generation_1705.11001v3.pdf
+Affirmative Cue Words in Task-Oriented Dialogue.pdf
+Attending to Mathematical Language with Transformers_1812.02825.pdf
+Attention Is All You Need_1706.03762.pdf
+AUTOREGRESSIVE ENTITY RETRIEVAL_2010.00904.pdf
+a_simple_but_tough_to_beat_baseline_for_sentence_embeddings.pdf
+BART Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension_1910.13461.pdf
+BERT Pre-training of Deep Bidirectional Transformers for Language Understanding_1810.04805.pdf
+BI-DIRECTIONAL ATTENTION FLOW FOR MACHINE COMPREHENSION_1611.01603.pdf
+Bi-directional Attention with Agreement for Dependency Parsing.pdf
+Bilateral Multi-Perspective Matching for Natural Language Sentences_1702.03814.pdf
+BILEXICAL GRAMMARS AND THEIR CUBIC-TIME PARSING ALGORITHMS.pdf
+BLEU a Method for Automatic Evaluation of Machine Translation.pdf
+Breaking the Beam Search Curse_1808.09582.pdf
+Challenges and opportunities for state tracking in statistical spoken dialog systems results from two public deployments.pdf
+CoNLL 2017 Shared Task Multilingual Parsing from Raw Text to Universal Dependencies.pdf
+Consistency of a Recurrent Language Model With Respect to Incomplete Decoding_2002.02492.pdf
+Content Extraction Using Diverse Feature Sets.pdf
+ConveRT Efficient and Accurate Conversational Representations from Transformers_1911.03688v2.pdf
+Convolutional Neural Network Architectures for Matching Natural Language Sentences_1503.03244.pdf
+CTRL A CONDITIONAL TRANSFORMER LANGUAGE MODEL FOR CONTROLLABLE GENERATION_1909.05858.pdf
+Data-Driven Response Generation in Social Media.pdf
+DEEP BIAFFINE ATTENTION FOR NEURAL DEPENDENCY PARSING.pdf
+Deep contextualized word representations_1802.05365.pdf
+DeepRank A New Deep Architecture for Relevance Ranking in Information Retrieval_1710.05649.pdf
+Dense Passage Retrieval for Open-Domain Question Answering_2004.04906.pdf
+Dialog State Tracking A Neural Reading Comprehension Approach_1908.01946.pdf
+Dialogue Transformers_1910.00486.pdf
+Dissecting Contextual Word Embeddings Architecture and Representation_1808.08949.pdf
+DistilBERT, a distilled version of BERT smaller, faster, cheaper and lighter_1910.01108.pdf
+DIVERSE BEAM SEARCH_1610.02424.pdf
+DocChat An Information Retrieval Approach for Chatbot Engines Using Unstructured Documents.pdf
+DuReader a Chinese Machine Reading Comprehension Dataset from Real-world Applications_1711.05073.pdf
+End-to-End Neural Ad-hoc Ranking with Kernel Pooling_1706.06613.pdf
+Energy and Policy Considerations for Deep Learning in NLP_1906.02243.pdf
+ERNIE-GEN An Enhanced Multi-Flow Pre-training and Fine-tuning Framework for Natural Language Generation_2001.11314v3.pdf
+Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer_1910.10683.pdf
+Formal Properties of Categorial Grammars.pdf
+FROM INDEXED GRAMMARS TO GENERATING FUNCTIONS_1102.1779.pdf
+FROM RULE-BASED TO STATISTICAL GRAMMARS CONTINUOUS IMPROVEMENT OF LARGE-SCALE SPOKEN DIALOG SYSTEMS.pdf
+Generating High-Quality and Informative Conversation Responses with Sequence-to-Sequence Models_1701.03185.pdf
+Generating Long Sequences with Sparse Transformers_1904.10509.pdf
+GENERATING WIKIPEDIA BY SUMMARIZING LONG SEQUENCES_1801.10198.pdf
+Globally Normalized Transition-Based Neural Networks_1603.06042.pdf
+Google’s Neural Machine Translation System Bridging the Gap between Human and Machine Translation_1609.08144.pdf
+Graph-Based Universal Dependency Parsing in the Age of the Transformer What Works, and What Doesn’t_2010.12699.pdf
+Green AI_1907.10597.pdf
+Group-wise Contrastive Learning for Neural Dialogue Generation_2009.07543.pdf
+Identifying User Corrections Automatically in Spoken Dialogue Systems.pdf
+Improving language understanding by generative pre-training.pdf
+IMPROVING NEURAL LANGUAGE MODELS WITH A CONTINUOUS CACHE_1612.04426.pdf
+Language GANs Falling Short_1811.02549v3.pdf
+Language Models are Few-Shot Learners_2005.14165.pdf
+Language Models are Unsupervised Multitask Learners.pdf
+Learned in Translation Contextualized Word Vectors_1708.00107.pdf
+Learning Accurate, Compact, and Interpretable Tree Annotation.pdf
+Learning Deep Structured Semantic Models for Web Search using Clickthrough Data.pdf
+Learning Semantic Representations Using Convolutional Neural Networks for Web Search.pdf
+MaltParser A Data-Driven Parser-Generator for Dependency Parsing.pdf
+Managing ambiguities across utterances in dialogue.pdf
+MODELING AND PREDICTING TRUSTWORTHINESS OF ONLINE TEXTUAL INFORMATION.pdf
+mT5 A massively multilingual pre-trained text-to-text transformer_2010.11934.pdf
+Neural Belief Tracker Data-Driven Dialogue State Tracking_1606.03777.pdf
+NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE_1409.0473.pdf
+Neural Machine Translation of Rare Words with Subword Units.pdf
+Neural Machine Translation of Rare Words with Subword Units_1508.07909.pdf
+NEURAL TEXT DEGENERATION WITH UNLIKELIHOOD TRAINING_1908.04319.pdf
+One Model To Learn Them All_1706.05137.pdf
+Online Large-Margin Training of Dependency Parsers.pdf
+OpenNMT Open-Source Toolkit for Neural Machine Translation_1701.02810.pdf
+PLATO Pre-trained Dialogue Generation Model with Discrete Latent Variable_1910.07931v3.pdf
+PLATO-2 Towards Building an Open-Domain Chatbot via Curriculum Learning_2006.16779.pdf
+Predicting Automatic Speech Recognition Performance Using Prosodic Cues.pdf
+Probing Neural Network Comprehension of Natural Language Arguments.pdf
+Reading Wikipedia to Answer Open-Domain Questions.pdf
+REASONING ABOUT ENTAILMENT WITH NEURAL ATTENTION_1509.06664.pdf
+Recognizing Textual Entailment_TeChapter.pdf
+relgan_relational_generative_adversarial_networks_for_text_generation.pdf
+Right for the Wrong Reasons Diagnosing Syntactic Heuristics in Natural Language Inference.pdf
+RoBERTa A Robustly Optimized BERT Pretraining Approach_1907.11692.pdf
+SALICON Reducing the Semantic Gap in Saliency Prediction by Adapting Deep Neural Networks.pdf
+Scaling Laws for Neural Language Models_2001.08361.pdf
+Semi-supervised Multitask Learning for Sequence Labeling.pdf
+Semi-supervised Sequence Learning_1511.01432.pdf
+Semi-supervised sequence tagging with bidirectional language models_1705.00108.pdf
+SentencePiece A simple and language independent subword tokenizer and detokenizer for Neural Text Processing_1808.06226.pdf
+Six Challenges for Neural Machine Translation.pdf
+Sorry, I Didn’t Catch That An Investigation of Non-understanding Errors and Recovery Strategies.pdf
+Stanford’s Graph-based Neural Dependency Parser at the CoNLL 2017 Shared Task.pdf
+StarSpace Embed All The Things_1709.03856.pdf
+Structured Training for Neural Network Transition-Based Parsing.pdf
+Subword Regularization Improving Neural Network Translation Models with Multiple Subword Candidates_1804.10959.pdf
+Subword Semantic Hashing for Intent Classification on Small Datasets_1810.07150.pdf
+SYNTHESIZER RETHINKING SELF-ATTENTION FOR TRANSFORMER MODELS_2005.00743v2.pdf
+TextRank Bringing Order into Texts.pdf
+THE CURIOUS CASE OF NEURAL TEXT DeGENERATION_1904.09751.pdf
+The Design and Implementation of XiaoIce, an Empathetic Social Chatbot_1812.08989.pdf
+The Dialog State Tracking Challenge Series A Review.pdf
+The Hidden Information Statemodel A practical framework for POMDP-based spoken dialogue management.pdf
+The LAMBADA dataset Word prediction requiring a broad discourse context.pdf
+The Natural Language Decathlon Multitask Learning as Question Answering_1806.08730.pdf
+The Part-Of-Speech Tagging Guidelines for the Penn Chinese Treebank.pdf
+The Ubuntu Dialogue Corpus A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems_1506.08909.pdf
+To Plan or not to Plan Discourse planning in slot-value informed sequence to sequence models for language generation.PDF
+Towards an Automatic Turing Test Learning to Evaluate Dialogue Responses.pdf
+Towards Better UD Parsing Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation.pdf
+Universal Language Model Fine-tuning for Text Classification_1801.06146.pdf
+Unsupervised Pretraining for Sequence to Sequence Learning_1611.02683.pdf
+When and Why are Pre-trained Word Embeddings Useful for Neural Machine Translation.pdf
+XLNet Generalized Autoregressive Pretraining for Language Understanding_1906.08237.pdf
+10.pdf
+12.pdf
+13.pdf
+14.pdf
+15.pdf
+18.pdf
+2.pdf
+26.pdf
+27.pdf
+8.pdf
+B.pdf
+1st Place Solutions for OpenImage2019 - Object Detection and Instance Segmentation_2003.07557.pdf
+A MultiPath Network for Object Detection_1604.02135.pdf
+Acquisition of Localization Confidence for Accurate Object Detection.pdf
+Augmentation for small object detection_1902.07296.pdf
+CAD Scale Invariant Framework for Real-Time Object Detection.pdf
+Cascade R-CNN Delving into High Quality Object Detection_1712.00726.pdf
+CBAM Convolutional Block Attention Module_1807.06521.pdf
+Context Encoding for Semantic Segmentation_1803.08904.pdf
+CornerNet Detecting Objects as Paired Keypoints.pdf
+CornerNet-Lite Efficient Keypoint Based Object Detection_1904.08900.pdf
+Detecting People Using Mutually Consistent Poselet Activations.pdf
+DetectoRS Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution_2006.02334v1.pdf
+Distance-IoU Loss Faster and Better Learning for Bounding Box Regression_1911.08287.pdf
+Duan_CenterNet_Keypoint_Triplets_for_Object_Detection_ICCV_2019_paper.pdf
+EfficientDet Scalable and Efficient Object Detection_1911.09070.pdf
+EfficientNet Rethinking Model Scaling for Convolutional Neural Networks_1905.11946.pdf
+Extreme clicking for efficient object annotation_1708.02750.pdf
+Factors in Finetuning Deep Model for Object Detection with Long-tail Distribution.pdf
+FCOS Fully Convolutional One-Stage Object Detection_1904.01355.pdf
+Feature Pyramid Networks for Object Detection_1612.03144.pdf
+Filter Response Normalization Layer Eliminating Batch Dependence in the Training of Deep Neural Networks_1911.09737v2.pdf
+Flickr30k Entities Collecting Region-to-Phrase Correspondences for Richer Image-to-Sentence Models_1505.04870.pdf
+Focal Loss for Dense Object Detection_1708.02002.pdf
+FRACTALNET ULTRA-DEEP NEURAL NETWORKS WITHOUT RESIDUALS_1605.07648.pdf
+Generalized Intersection over Union A Metric and A Loss for Bounding Box Regression.pdf
+GhostNet More Features from Cheap Operations_1911.11907.pdf
+Gradient Harmonized Single-stage Detector_1811.05181.pdf
+Huang_SpeedAccuracy_Trade-Offs_for_CVPR_2017_paper.pdf
+Hybrid Task Cascade for Instance Segmentation_1901.07518.pdf
+Learning Data Augmentation Strategies for Object Detection_1906.11172.pdf
+Learning from Noisy Anchors for One-stage Object Detection_1912.05086v1.pdf
+Learning Region Features for Object Detection_1803.07066.pdf
+Learning Spatial Fusion for Single-Shot Object Detection_1911.09516.pdf
+Locating Objects Without Bounding Boxes.pdf
+M2Det A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network_1811.04533.pdf
+MegDet A Large Mini-Batch Object Detector_1711.07240.pdf
+Mish A Self Regularized Non-Monotonic Neural Activation Function_1908.08681.pdf
+Missing Labels in Object Detection.pdf
+MixConv Mixed Depthwise Convolutional Kernels_1907.09595.pdf
+MMDetection Open MMLab Detection Toolbox and Benchmark_1906.07155.pdf
+Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics_1705.07115.pdf
+Non-local Neural Networks_1711.07971.pdf
+PAY LESS ATTENTION WITH LIGHTWEIGHT AND DYNAMIC CONVOLUTIONS_1901.10430.pdf
+PFDet 2nd Place Solution to Open Images Challenge 2018 Object Detection Track_1809.00778.pdf
+Pyramid Scene Parsing Network_1612.01105.pdf
+Receptive Field Block Net for Accurate and Fast Object Detection_1711.07767.pdf
+Region Proposal by Guided Anchoring_1901.03278.pdf
+Relation Networks for Object Detection.pdf
+RepPoints Point Set Representation for Object Detection_1904.11490.pdf
+Rethinking Classification and Localization for Object Detection_1904.06493.pdf
+Revisiting knowledge transfer for training object class detectors.pdf
+Revisiting the Sibling Head in Object Detector_2003.07540.pdf
+Self-Normalizing Neural Networks_1706.02515.pdf
+Shen_Noise-Aware_Fully_Webly_Supervised_Object_Detection_CVPR_2020_paper.pdf
+Solution for Large-Scale Hierarchical Object Detection Datasets with Incomplete Annotation and Data Imbalance_1810.06208v1.pdf
+Training Object Detectors With Noisy Data_1905.07202.pdf
+We don’t need no bounding-boxes Training object class detectors using only human verification_1602.08405.pdf
+Weakly Supervised Deep Detection Networks_1511.02853.pdf
+YOLOv4 Optimal Speed and Accuracy of Object Detection_2004.10934.pdf
+Zhang_Bridging_the_Gap_Between_Anchor-Based_and_Anchor-Free_Detection_via_Adaptive_CVPR_2020_paper.pdf
+Zhou_Bottom-Up_Object_Detection_by_Grouping_Extreme_and_Center_Points_CVPR_2019_paper.pdf
+A CLOSER LOOK AT DEEP LEARNING HEURISTICS EARNING RATE RESTARTS, WARMUP AND DISTILLATION_1810.13243.pdf
+A fast natural Newton method.pdf
+A Survey of Optimization Methods from a Machine Learning Perspective_1906.06821.pdf
+ADADELTA AN ADAPTIVE LEARNING RATE METHOD_1212.5701.pdf
+ADAM A METHOD FOR STOCHASTIC OPTIMIZATION_1412.6980.pdf
+Adaptive Subgradient Methods for Online Learning and Stochastic Optimization.pdf
+ALL YOU NEED IS A GOOD INIT_1511.06422.pdf
+Batch and online learning algorithms for Nonconvex Neyman-Pearson classification.pdf
+Chapter16_Generalization Error in Deep Learning.pdf
+DECOUPLED WEIGHT DECAY REGULARIZATION_1711.05101.pdf
+Exact solutions to the nonlinear dynamics of learning in deep linear neural networks_1312.6120.pdf
+Exponential Convergence Time of Gradient Descentfor One-Dimensional Deep Linear Neural Networks_1809.08587.pdf
+Exponential expressivity in deep neural networks through transient chaos_1606.05340.pdf
+Fast large-scale optimization by unifying stochastic gradient and quasi-Newton methods.pdf
+Generalization Error in Deep Learning_1808.01174.pdf
+Global Optimality in Neural Network Training.pdf
+No More Pesky Learning Rates_1206.1106.pdf
+On Optimization Methods for Deep Learning.pdf
+ON THE CONVERGENCE OF A CLASS OF ADAM-TYPE ALGORITHMS FOR NON-CONVEX OPTIMIZATION_1808.02941.pdf
+ON THE CONVERGENCE OF ADAM AND BEYOND.pdf
+Online Convex Programming and Generalized Infinitesimal Gradient Ascent.pdf
+Optimization for deep learning theory and algorithms_1912.08957.pdf
+Optimization for Simulation Theory vs. Practice.pdf
+Optimization Methods for Large-Scale Machine Learning_1606.04838.pdf
+Optimization Methods for Supervised Machine Learning From Linear Models to Deep Learning_1706.10207.pdf
+Revisiting natural gradient for deep networks_1301.3584.pdf
+Scaling Laws for the Principled Design, Initialization and Preconditioning of ReLU Networks_1906.04267v1.pdf
+The Marginal Value of Adaptive Gradient Methods in Machine Learning_1705.08292.pdf
+Closed-Loop Learning of Visual Control Policies_1110.2210.pdf
+Developmental Robotics, Optimal Artificial Curiosity, Creativity, Music, and the Fine Arts.pdf
+Intrinsically Motivated Learning of Real World Sensorimotor Skills with Developmental Constraints.pdf
+Intrinsically Motivated Reinforcement Learning.pdf
+POWERPLAY Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem_1112.5309.pdf
+CP-VTON+ Clothing Shape and Texture Preserving Image-Based Virtual.pdf
+DOWN TO THE LAST DETAIL VIRTUAL TRY-ON WITH DETAIL CARVING_1912.06324.pdf
+Image Based Virtual Try-on Network from Unpaired Data.pdf
+Learning to Transfer Texture from Clothing Images to 3D Humans_2003.02050v2.pdf
+M2E-Try On Net Fashion from Model to Everyone_1811.08599v1.pdf
+Patel_TailorNet_Predicting_Clothing_in_3D_as_a_Function_of_Human_CVPR_2020_paper.pdf
+SwapNet Image Based Garment Transfer.pdf
+Toward Characteristic-Preserving Image-based Virtual Try-On Network.pdf
+Towards Photo-Realistic Virtual Try-On by Adaptively Generating↔Preserving Image Content_2003.05863.pdf
+VITON An Image-based Virtual Try-on Network.pdf
